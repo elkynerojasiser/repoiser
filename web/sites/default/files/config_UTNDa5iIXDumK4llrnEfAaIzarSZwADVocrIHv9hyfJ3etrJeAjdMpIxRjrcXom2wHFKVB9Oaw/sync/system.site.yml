@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: es
+uuid: 1102d5e8-777f-4558-8716-7c10cf63907c
+name: 'Repositorio del programa Tecnología en Gestión de Redes y Sistemas Tele Informáticos'
+mail: elkinrojas.docente@iser.edu.co
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: null

@@ -1,0 +1,58 @@
+{# node--practicas.html.twig #}
+
+<div class="container custom-formacion">
+    <article {{attributes.addClass('node','node--type-practicas','clearfix')}}>
+    
+      <div class="content-wrapper">
+        <div class="document-details">
+          <div class="row">
+            <div class="col-left">
+              <div class="document-img">
+                <div class="imgagge">
+                  {{ content.field_imagen_de_portada_practica }}
+                </div>
+                <div class="archivee">
+                  <strong>Archivo</strong>
+                  {{ content.field_archivos }}
+                </div>
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="document-info">
+                <div class="authors">
+                  <strong>Autor(es):</strong>
+                  {{ content.field_autor }}
+                </div>
+                <div class="summary">
+                  <strong>Asignatura:</strong>
+                  {{ content.field_asignatura }}
+                </div>
+                <div class="publication-date">
+                  <strong>Fecha de publicación:</strong>
+                  {{ content.field_fecha}}
+                </div>
+                <div class="program">
+                    <strong>Programa:</strong>
+                    {{ content.field_pro_grama }}
+                  </div>
+                <div class="uri">
+                  <strong>URI:</strong>
+                  {{ content.field_uri }}
+                </div>
+                <div class="validacion">
+                  <strong>Estado de la validacion del comite:</strong>
+                  {{ content.field_validacion_comite }}
+                </div>
+                <div class="metadata">
+                  <strong>Metadatos:</strong>
+                  {{ content.field_metadatos }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </article>
+  </div>
+  

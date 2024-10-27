@@ -1,0 +1,74 @@
+{# node--contenido.html.twig #}
+
+<div class="container custom-contenido">
+    <article {{attributes.addClass('node','node--type-contenido','clearfix')}}>
+    
+      <div class="content-wrapper">
+        <div class="document-details">
+          <div class="row">
+            <div class="col-left">
+              <div class="document-img">
+                <div class="imgagge">
+                  {{ content.field_portada_contenido }}
+                </div>
+                <div class="archivee">
+                  <strong>Archivo</strong>
+                  {{ content.field_archivos }}
+                </div>
+                <div class="Izquierda-componentes">
+                    <strong>Semestre:</strong>
+                    {{ content.field_semestre }}
+                </div>
+                <div class="Izquierda-componentes">
+                    <strong>Tipo de curso:</strong>
+                    {{ content.field_tipo_de_curso }}
+                </div>
+                <div class="Izquierda-componentes">
+                    <strong>Componente:</strong>
+                    {{ content.field_componente }}
+                </div>
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="document-info">
+                <div class="program">
+                  <strong>Programa:</strong>
+                  {{ content.field_programas }}
+                </div>
+                <div class="authors">
+                    <strong>Codigo:</strong>
+                    {{ content.field_codigo }}
+                </div>
+                <div class="authors">
+                    <strong>Validacion del comite:</strong>
+                    {{ content.field_validacion_comite }}
+                </div>
+                <div class="summary">
+                    <strong>Resumen:</strong>
+                    {{ content.field_resumen }}
+                </div>
+                <div class="publication-date">
+                    <strong>Fecha de publicación:</strong>
+                    {{ content.field_fecha_}}
+                </div>
+                <div class="plan-de-estudio">
+                    <strong>Version de plan de estudio:</strong>
+                    {{ content.field_version_del_plan_de_estudi}}
+                </div>
+                <div class="uri">
+                  <strong>URI:</strong>
+                  {{ content.field_uri }}
+                </div>
+                <div class="metadata">
+                  <strong>Metadatos:</strong>
+                  {{ content.field_metadatos }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </article>
+  </div>
+  

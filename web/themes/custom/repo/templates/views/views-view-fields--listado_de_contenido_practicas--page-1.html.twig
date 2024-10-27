@@ -1,0 +1,42 @@
+{# Archivo: themes/custom/tu-tema/templates/views-view--listado_de_contenido_trabajo_de_grado--page-1.html.twig #}
+
+<div class="view-left-column">
+    {# Imprime los filtros expuestos dentro de un formulario #}
+    {% if exposed %}
+      <div class="view-filters">
+        <form action="{{ view.exposed.form.action }}" method="get" id="{{ view.exposed.form_id }}">
+          {{ exposed }}
+        </form>
+      </div>
+    {% endif %}
+  </div>
+
+<!--<div class="d-flex justify-content-center custom-title-page">
+  <div class="img-trabajosdegrado">
+    <img src="/themes/custom/repo/assets/icons/documento.png" alt="Documentos Institucionales">
+  </div>
+</div>-->
+
+<div class="view-right-column">
+    <div class="contenedor">
+        <div class="custom-page-title">{{ title }}</div>
+        <div class="trabajo">
+            <div class="imagen">
+                {{ fields.field_imagen_de_portada_practica.content }}
+            </div>
+            <div class="detalles">
+                <h1>{{ fields.title.content }}</h1>
+                <span class="autor">{{ fields.field_autor.content }} ({{fields.field_fecha.content}})</span>
+                <div class="resumen-container">
+                  <span class="resumen">{{ fields.field_asignatura.content }}</span>
+                  <div class="img-practicas">
+                    <img src="/themes/custom/repo/assets/logos-ref/sello.iser.jpg" alt="Documentos Institucionales">
+                  </div>
+                </div>
+                <div class="operaciones-container">
+                  <span class="operations">{{ fields.operations.content }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

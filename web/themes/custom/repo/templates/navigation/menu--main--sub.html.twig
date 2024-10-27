@@ -1,0 +1,14 @@
+{#
+ * @file
+ * Template for submenus.
+#}
+<ul>
+    {% for item in items %}
+      <li{{ item.attributes.addClass(item.is_expanded ? 'expanded', item.is_collapsed ? 'collapsed', item.in_active_trail ? 'active-trail') }}>
+        {{ link(item.title, item.url) }}
+        {% if item.below %}
+          {{ include('@repo/menu--main--sub.html.twig', { 'items': item.below }) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-stack;
+    color: #333;
+  }
+  
+  header, nav, main, footer {
+    padding: 10px;
+  }

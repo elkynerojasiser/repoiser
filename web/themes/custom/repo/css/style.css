@@ -1,0 +1,29 @@
+@import url(animate.css);
+.custom-header img {
+  width: 200px; }
+
+.menu-principal-repo {
+  display: block; }
+
+.primary-menu-repo {
+  background-color: #1B9E88; }
+  .primary-menu-repo ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    .primary-menu-repo ul li a {
+      color: #ffffff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333; }
+
+header, nav, main, footer {
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */

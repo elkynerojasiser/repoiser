@@ -1,0 +1,37 @@
+{# Archivo: themes/custom/tu-tema/templates/views-view--autoevaluacion--page-1.html.twig #}
+
+<div class="view-left-column">
+    {# Imprime los filtros expuestos dentro de un formulario #}
+    {% if exposed %}
+      <div class="view-filters">
+        <form action="{{ view.exposed.form.action }}" method="get" id="{{ view.exposed.form_id }}">
+          {{ exposed }}
+        </form>
+      </div>
+    {% endif %}
+  </div>
+
+<!--<div class="d-flex justify-content-center custom-title-page">
+  <div class="img-trabajosdegrado">
+    <img src="/themes/custom/repo/assets/icons/documento.png" alt="Documentos Institucionales">
+  </div>
+</div>-->
+
+<div class="view-right-column">
+    <div class="contenedor">
+        <div class="trabajo">
+            <div class="detalles">
+              <div class="img-acreditacion">
+                <img src="/themes/custom/repo/assets/icons/autoevaluacion.png" alt="Documentos Institucionales">
+              </div>
+              <h1>{{ fields.title.content }}</h1>
+              <div class="condiciones-container">
+                <span class="periodo_gestion">{{ fields.field_version.content }}</span>
+              </div>
+              <div class="operaciones-container">
+                <span class="operations">{{ fields.operations.content }}</span>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

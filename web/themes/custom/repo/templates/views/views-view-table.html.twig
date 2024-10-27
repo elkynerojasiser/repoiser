@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view as a table.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the table element.
+ * - title: The title of the view.
+ * - header: An array of header labels for each column.
+ * - rows: An array of row items. Each row is an array of column items.
+ * - row_classes: An array of classes to apply to each row.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="container ml-2 mr-2 custom-view-table">
+	<table{{attributes.addClass('views-table')}}>
+		{% if title %}
+			<caption>{{ title }}</caption>
+		{% endif %}
+		<thead>
+			<tr>
+				{% for label in header %}
+					<th{{label.attributes}}>{{ label.content }}</th>
+				{% endfor %}
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in rows %}
+				<tr{{row.attributes}}>
+					{% for column in row.columns %}
+						<td{{column.attributes}}>{{ column.content }}</td>
+					{% endfor %}
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>

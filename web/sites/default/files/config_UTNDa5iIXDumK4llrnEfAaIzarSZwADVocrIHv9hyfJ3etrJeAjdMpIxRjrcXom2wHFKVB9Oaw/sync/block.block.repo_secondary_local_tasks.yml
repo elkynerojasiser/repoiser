@@ -1,0 +1,22 @@
+uuid: ce162224-18a6-49de-98d9-e9180fbd65be
+langcode: en
+status: true
+dependencies:
+  theme:
+    - repo
+_core:
+  default_config_hash: lpVq_Qyojss-EfQ_LgUPkPSbXcUD9ojyNZgmUZP4d7I
+id: repo_secondary_local_tasks
+theme: repo
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

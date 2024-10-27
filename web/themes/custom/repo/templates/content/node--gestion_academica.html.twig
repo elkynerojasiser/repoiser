@@ -1,0 +1,116 @@
+
+<div class="container custom-acreditacion">
+	<article{{attributes.addClass('node','node--type-gestion_academica','clearfix')}}>
+
+		<div{{content_attributes.addClass('node__content')}}>
+            {% if content.field_comite_curricular %}
+            <div class="node__condiciones card card__field">
+                <div class="card-title">
+                    <h3>Tipo de comite</h3>
+                </div>
+                <div class="card-text-condiciones">
+                    {{ content.field_comite_curricular }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_citacion %}
+            <div class="node__cuadros__maestros card card__field">
+                <div class="card-title">
+                    <h3>Citacion</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_citacion }}
+                </div>
+            </div>
+            {% endif %}
+            {% if content.field_asistencia %}
+            <div class="node__documentos card card__field">
+                <div class="card-title">
+                    <h3>Asistencia</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_asistencia }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_acta_resumen %}
+            <div class="node__excel card card__field">
+                <div class="card-title">
+                    <h3>Acta resumen</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_acta_resumen }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_consolidado %}
+            <div class="node__excel card card__field">
+                <div class="card-title">
+                    <h3>Consolidado</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_consolidado }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_informes_profesores %}
+            <div class="node__excel card card__field">
+                <div class="card-title">
+                    <h3>Informes profesores</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_informes_profesores }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_correspondecia %}
+            <div class="node__excel card card__field">
+                <div class="card-title">
+                    <h3>Correspondencia</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_correspondecia }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_informes_academicos %}
+            <div class="node__excel card card__field">
+                <div class="card-title">
+                    <h3>Informes academicos</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_informes_academicos }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_plan_anual_del_programa %}
+            <div class="node__excel card card__field">
+                <div class="card-title">
+                    <h3>Plan anual del programa</h3>
+                </div>
+                <div class="card-text">
+                    {{ content.field_plan_anual_del_programa }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if content.field_periodo %}
+            <div class="node__excel card card__field">
+                <div class="card-title">
+                    <h3>Periodo</h3>
+                </div>
+                <div class="card-text-periodo">
+                    {{ content.field_periodo }}
+                </div>
+            </div>
+            {% endif %}
+		</div>
+	</article>
+</div>

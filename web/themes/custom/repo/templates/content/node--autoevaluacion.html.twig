@@ -1,0 +1,52 @@
+
+<div class="container custom-acreditacion">
+	<article{{attributes.addClass('node','node--type-autoevaluacion','clearfix')}}>
+
+		<div{{content_attributes.addClass('node__content')}}>
+		{% if content.field_version %}
+		<div class="node__condiciones card card__field">
+			<div class="card-title">
+				<h3>Fecha de version</h3>
+			</div>
+			<div class="card-text-condiciones">
+				{{ content.field_version }}
+			</div>
+		</div>
+		{% endif %}
+
+		{% if content.field_informe %}
+		<div class="node__cuadros__maestros card card__field">
+        	<div class="card-title">
+            	<h3>Informe</h3>
+        	</div>
+			<div class="card-text">
+            	{{ content.field_informe}}
+          	</div>
+		</div>
+		{% endif %}
+
+        {% if content.field_plan_de_mejoramiento %}
+		<div class="node__cuadros__maestros card card__field">
+        	<div class="card-title">
+            	<h3>Plan de mejoramiento</h3>
+        	</div>
+			<div class="card-text">
+            	{{ content.field_plan_de_mejoramiento}}
+          	</div>
+		</div>
+		{% endif %}
+
+        {% if content.field_avances %}
+		<div class="node__cuadros__maestros card card__field">
+        	<div class="card-title">
+            	<h3>Avances</h3>
+        	</div>
+			<div class="card-text">
+            	{{ content.field_avances}}
+          	</div>
+		</div>
+		{% endif %}
+        
+		</div>
+	</article>
+</div>

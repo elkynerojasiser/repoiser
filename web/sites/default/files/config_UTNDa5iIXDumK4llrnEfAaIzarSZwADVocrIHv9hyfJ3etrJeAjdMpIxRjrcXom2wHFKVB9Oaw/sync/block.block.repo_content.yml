@@ -1,0 +1,22 @@
+uuid: e4401ccd-8833-46e0-8b8a-7382adf2dca4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - repo
+_core:
+  default_config_hash: GuQlH3j65O5SXgAliLjf1Ben7XBU6qxvW7xXUo6q0rk
+id: repo_content
+theme: repo
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,66 @@
+{# node--trabajo_de_grado.html.twig #}
+
+<div class="container custom-formacion">
+    <article {{attributes.addClass('node','node--type-formacion','clearfix')}}>
+    
+      <div class="content-wrapper">
+        <div class="document-details">
+          <div class="row">
+            <div class="col-left">
+              <div class="document-img">
+                <div class="imgagge">
+                  {{ content.field_imagen_de_portada }}
+                </div>
+                <div class="archivee">
+                  <strong>Archivo</strong>
+                  {{ content.field_programa }}
+                </div>
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="document-info">
+                <div class="authors">
+                  <strong>Autor(es):</strong>
+                  {{ content.field_autor_es }}
+                </div>
+                <div class="summary">
+                  <strong>Resumen:</strong>
+                  {{ content.field_resumen }}
+                </div>
+                <div class="publication-date">
+                  <strong>Fecha de publicación:</strong>
+                  {{ content.field_fecha_}}
+                </div>
+                <div class="ies">
+                  <strong>IES:</strong>
+                  {{ content.field_ies }}
+                </div>
+                <div class="content-type">
+                  <strong>Tipo de contenido:</strong>
+                  {{ content.field_tipo_de_contenido}}
+                </div>
+                <div class="program">
+                  <strong>Programa:</strong>
+                  {{ content.field_programas }}
+                </div>
+                <div class="axis">
+                  <strong>Eje:</strong>
+                  {{ content.field_eje }}
+                </div>
+                <div class="uri">
+                  <strong>URI:</strong>
+                  {{ content.field_uri }}
+                </div>
+                <div class="metadata">
+                  <strong>Metadatos:</strong>
+                  {{ content.field_metadatos }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </article>
+  </div>
+  

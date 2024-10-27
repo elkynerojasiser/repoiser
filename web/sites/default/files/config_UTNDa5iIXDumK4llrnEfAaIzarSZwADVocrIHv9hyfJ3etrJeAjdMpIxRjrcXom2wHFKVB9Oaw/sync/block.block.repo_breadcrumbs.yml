@@ -1,0 +1,22 @@
+uuid: 4f3d1b09-5b20-410a-a015-c7d3f920ff51
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - repo
+_core:
+  default_config_hash: xk8HAWIUZCzYFsUX2sNmTNDUxSoCdwrEI1tpTT5LW9s
+id: repo_breadcrumbs
+theme: repo
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

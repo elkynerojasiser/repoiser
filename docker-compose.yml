@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  mysql:
+    container_name: repoiser-db
+    image: mysql:8.0.31
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: mysqlrootkey
+      MYSQL_DATABASE: db
+  phpmyadmin:
+    container_name: repoiser-pma
+    image: phpmyadmin:5.2.0-apache
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: mysqlrootkey
+      MEMORY_LIMIT: -1
+      UPLOAD_LIMIT: 4096M
+    depends_on:
+      - mysql
+  repoiser-app:
+    container_name: repoiser-app
+    image: elkynerojas/php-apache-composer:8.3
+    volumes:
+      - .:/var/www/html/app
+    ports:
+      - 80:80
+    depends_on:
+      - phpmyadmin
+

@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a node of type "acreditacion".
+ *
+ * Available variables:
+ * - node: Full node object.
+ * - label: (string) The title of the node.
+ * - content: All node items. Use {{ content }} to print them all, or print a subset such as {{ content.field_example }}.
+ * - date: Formatted creation date.
+ * - user_picture: The node author's picture from user-picture.html.twig.
+ * - author_name: The node author's username.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ * - content_attributes: HTML attributes for the content element.
+ * - title_attributes: HTML attributes for the title element.
+ * - author_attributes: HTML attributes for the author element.
+ * - created: Timestamp of when the node was published.
+ * - changed: Timestamp of when the node was last changed.
+ *
+ * Custom variables specific to this node type:
+ * - content.field_condiciones: The taxonomy term reference field.
+ * - content.field_cuadros_maestros: File reference field with multiple values.
+ * - content.field_documentos: File reference field with multiple values.
+ * - content.field_excel_archivos: File reference field with multiple values.
+ */
+#}
+<div class="container custom-acreditacion">
+	<article{{attributes.addClass('node','node--type-acreditacion','clearfix')}}>
+
+		<div{{content_attributes.addClass('node__content')}}>
+		{% if content.field_condiciones %}
+		<div class="node__condiciones card card__field">
+			<div class="card-title">
+				<h3>Condiciones</h3>
+			</div>
+			<div class="card-text-condiciones">
+				{{ content.field_condiciones }}
+			</div>
+		</div>
+		{% endif %}
+
+		{% if content.field_cuadros_maestros %}
+		<div class="node__cuadros__maestros card card__field">
+        	<div class="card-title">
+            	<h3>Cuadros Maestros</h3>
+        	</div>
+			<div class="card-text">
+            	{{ content.field_cuadros_maestros }}
+          	</div>
+		</div>
+		{% endif %}
+
+		{% if content.field_documentos %}
+			<div class="node__documentos card card__field">
+        	<div class="card-title">
+            	<h3>Documentos</h3>
+        	</div>
+		<div class="card-text">
+            {{ content.field_documentos }}
+        </div>
+				</div>
+			{% endif %}
+
+			{% if content.field_excel_archivos %}
+				<div class="node__excel card card__field">
+          <div class="card-title">
+            <h3>Archivos Excel</h3>
+          </div>
+					<div class="card-text">
+            {{ content.field_excel_archivos }}
+          </div>
+				</div>
+			{% endif %}
+		</div>
+	</article>
+</div>

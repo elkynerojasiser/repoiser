@@ -1,0 +1,17 @@
+@mixin float-effect {
+    @keyframes flotador {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-4px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+    }
+    animation-name: flotador;
+        animation-duration: 0.5s; /* Duración de la animación en segundos */
+        animation-timing-function: ease-in-out; /* Función de temporización de la animación */
+        animation-iteration-count:unset;
+}
