@@ -1,0 +1,24 @@
+uuid: 0661a32b-e6fb-4e86-9523-d02a9a596bad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.facultad
+  module:
+    - text
+id: node.facultad.body
+field_name: body
+entity_type: node
+bundle: facultad
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

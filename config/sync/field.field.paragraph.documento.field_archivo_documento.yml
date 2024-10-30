@@ -1,0 +1,27 @@
+uuid: fda8c5cc-6388-4f45-9a82-da9071c327f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_archivo_documento
+    - paragraphs.paragraphs_type.documento
+  module:
+    - file
+id: paragraph.documento.field_archivo_documento
+field_name: field_archivo_documento
+entity_type: paragraph
+bundle: documento
+label: Archivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: Documentos
+  file_extensions: 'pdf doc docx xls xlsx'
+  max_filesize: 1GB
+  description_field: false
+field_type: file

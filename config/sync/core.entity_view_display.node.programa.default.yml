@@ -1,0 +1,38 @@
+uuid: 34b24489-fe19-4a6c-b5bd-4b42f976a05c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.programa.field_codigo_programa
+    - field.field.node.programa.field_facultad
+    - node.type.programa
+  module:
+    - user
+id: node.programa.default
+targetEntityType: node
+bundle: programa
+mode: default
+content:
+  field_codigo_programa:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_facultad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

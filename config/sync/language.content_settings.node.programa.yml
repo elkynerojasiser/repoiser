@@ -1,0 +1,11 @@
+uuid: 101d2009-7593-46b0-afcd-6c4abd3443d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.programa
+id: node.programa
+target_entity_type_id: node
+target_bundle: programa
+default_langcode: site_default
+language_alterable: false

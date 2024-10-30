@@ -1,0 +1,18 @@
+uuid: 690cee93-0959-4c56-82d2-49bd218b010c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.registro_calificado
+id: node.registro_calificado.title
+field_name: title
+entity_type: node
+bundle: registro_calificado
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 7ccac64c-79f4-4ef2-8355-48b8897b44ef
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_descripcion_documento
+field_name: field_descripcion_documento
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

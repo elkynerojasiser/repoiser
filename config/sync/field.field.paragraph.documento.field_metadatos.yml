@@ -1,0 +1,37 @@
+uuid: 537663bf-22fa-4e39-a78f-edabc0ccc5c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_metadatos
+    - paragraphs.paragraphs_type.documento
+    - paragraphs.paragraphs_type.metadato
+  module:
+    - entity_reference_revisions
+id: paragraph.documento.field_metadatos
+field_name: field_metadatos
+entity_type: paragraph
+bundle: documento
+label: Metadatos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      metadato: metadato
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_rc:
+        weight: 4
+        enabled: false
+      documento:
+        weight: 5
+        enabled: false
+      metadato:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,59 @@
+uuid: 1247ba5b-0f22-43a5-9982-847599af31e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.registro_calificado.field_aspecto_proceso
+    - field.field.node.registro_calificado.field_condiciones_rc
+    - field.field.node.registro_calificado.field_programa
+    - field.field.node.registro_calificado.field_resolucion_rc
+    - node.type.registro_calificado
+  module:
+    - entity_reference_revisions
+    - user
+id: node.registro_calificado.default
+targetEntityType: node
+bundle: registro_calificado
+mode: default
+content:
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_condiciones_rc:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_resolucion_rc:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,17 @@
+uuid: e41554be-511f-4033-a54e-dcbdca12b973
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Facultad
+type: facultad
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

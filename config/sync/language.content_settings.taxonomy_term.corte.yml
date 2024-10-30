@@ -1,0 +1,11 @@
+uuid: 0cb1d22a-c944-4241-b9b9-3df39a96dd6c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.corte
+id: taxonomy_term.corte
+target_entity_type_id: taxonomy_term
+target_bundle: corte
+default_langcode: site_default
+language_alterable: false

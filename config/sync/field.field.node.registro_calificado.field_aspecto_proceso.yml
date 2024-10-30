@@ -1,0 +1,33 @@
+uuid: 3670eeee-0e2e-4d50-8338-19e6606d90ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspecto_proceso
+    - node.type.registro_calificado
+    - taxonomy.vocabulary.aspecto_proceso
+  content:
+    - 'taxonomy_term:aspecto_proceso:0e2b3514-7e08-4a61-8cfe-22572a712610'
+id: node.registro_calificado.field_aspecto_proceso
+field_name: field_aspecto_proceso
+entity_type: node
+bundle: registro_calificado
+label: 'Aspecto - Proceso'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 0e2b3514-7e08-4a61-8cfe-22572a712610
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      aspecto_proceso: aspecto_proceso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

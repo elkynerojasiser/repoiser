@@ -1,0 +1,10 @@
+uuid: 5c7336e3-baee-4aa2-9a45-47a1f063c7e5
+langcode: es
+status: true
+dependencies: {  }
+id: condiciones_rc
+label: 'Condiciones de Registro Calificado'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 909abdad-1cce-4634-96f3-a5f861474360
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_archivo_documento
+field_name: field_archivo_documento
+entity_type: paragraph
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,9 +1,0 @@
-uuid: d6d13457-61ce-4c21-b3c0-c7337377aa96
-langcode: es
-status: true
-dependencies: {  }
-name: Condiciones
-vid: condiciones
-description: 'Condiciones con fines de acreditación'
-weight: 0
-new_revision: false

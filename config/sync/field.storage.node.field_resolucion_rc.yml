@@ -1,0 +1,21 @@
+uuid: 17e219ec-d738-4140-a7ea-0a6b20eb79af
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_resolucion_rc
+field_name: field_resolucion_rc
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 048eba47-f36e-49f7-8747-0d420756c62f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.registro_calificado
+id: node.registro_calificado
+target_entity_type_id: node
+target_bundle: registro_calificado
+default_langcode: site_default
+language_alterable: false

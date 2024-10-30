@@ -1,0 +1,25 @@
+uuid: 20b5d643-4e68-4385-bc63-f60d58db9bde
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.programa.field_codigo_programa
+    - field.field.node.programa.field_facultad
+    - node.type.programa
+  module:
+    - user
+id: node.programa.teaser
+targetEntityType: node
+bundle: programa
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_codigo_programa: true
+  field_facultad: true
+  langcode: true
