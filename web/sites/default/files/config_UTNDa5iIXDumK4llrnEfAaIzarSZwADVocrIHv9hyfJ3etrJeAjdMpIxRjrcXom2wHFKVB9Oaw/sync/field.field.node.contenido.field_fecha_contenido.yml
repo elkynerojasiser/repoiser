@@ -1,0 +1,21 @@
+uuid: aab18758-b2d5-4073-8f72-289e361de8d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_contenido
+    - node.type.contenido
+  module:
+    - datetime
+id: node.contenido.field_fecha_contenido
+field_name: field_fecha_contenido
+entity_type: node
+bundle: contenido
+label: Fecha
+description: 'Asigne la fecha de publicación'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

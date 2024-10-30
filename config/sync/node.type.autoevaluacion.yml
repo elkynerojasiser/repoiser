@@ -1,0 +1,17 @@
+uuid: 8d3dbf69-f239-40c9-b3a6-02247af09d4d
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Autoevaluación
+type: autoevaluacion
+description: 'La autoevaluación es un proceso crítico y profundo de autoestudio o revisión interna que realizan instituciones y programas académicos para verificar sus condiciones de calidad.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

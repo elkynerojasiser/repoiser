@@ -1,0 +1,19 @@
+uuid: 1c54cddc-0e22-4433-b008-f841b8e68227
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_es
+    - node.type.article
+id: node.article.field_autor_es
+field_name: field_autor_es
+entity_type: node
+bundle: article
+label: Autor(es)
+description: 'Ingrese el nombre de los autores de proyecto'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

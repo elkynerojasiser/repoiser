@@ -1,0 +1,11 @@
+uuid: d0046516-799f-492a-8bfc-d57ac89bc033
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ies
+id: taxonomy_term.ies
+target_entity_type_id: taxonomy_term
+target_bundle: ies
+default_langcode: site_default
+language_alterable: true

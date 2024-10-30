@@ -1,0 +1,21 @@
+uuid: 8dfd80ce-20df-4c9c-80aa-560524d47f4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_asignatura
+    - node.type.practicas
+  module:
+    - options
+id: node.practicas.field_asignatura
+field_name: field_asignatura
+entity_type: node
+bundle: practicas
+label: Asignatura
+description: 'Este campo es para las asignaturas de las prácticas'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

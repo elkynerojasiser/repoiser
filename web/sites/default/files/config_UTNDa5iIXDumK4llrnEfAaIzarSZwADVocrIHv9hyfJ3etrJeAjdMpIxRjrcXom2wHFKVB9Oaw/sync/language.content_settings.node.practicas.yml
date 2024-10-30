@@ -1,0 +1,11 @@
+uuid: 949b13bf-c60e-4c5e-b0bd-dd62c3d68512
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.practicas
+id: node.practicas
+target_entity_type_id: node
+target_bundle: practicas
+default_langcode: site_default
+language_alterable: false

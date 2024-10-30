@@ -1,0 +1,9 @@
+uuid: e469ca7c-c7ad-4b67-932b-4e8b6f36725f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Periodo Académico'
+vid: periodo_academico
+description: null
+weight: 0
+new_revision: false

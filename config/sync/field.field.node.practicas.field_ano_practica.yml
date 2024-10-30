@@ -1,0 +1,23 @@
+uuid: 29f06abd-a7c2-4b8c-b7bd-8867bcdaf412
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ano_practica
+    - node.type.practicas
+id: node.practicas.field_ano_practica
+field_name: field_ano_practica
+entity_type: node
+bundle: practicas
+label: 'Año de creación'
+description: 'Por favor, reafirme el año en el que se está publicando este producto académico'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: 9999
+  prefix: ''
+  suffix: ''
+field_type: integer

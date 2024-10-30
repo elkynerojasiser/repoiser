@@ -1,0 +1,29 @@
+uuid: f0f4ba8f-cd13-419a-8247-5fa3d8785482
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programa_articulo
+    - node.type.article
+    - taxonomy.vocabulary.programa
+id: node.article.field_programa_articulo
+field_name: field_programa_articulo
+entity_type: node
+bundle: article
+label: Programa
+description: 'Asigne su programa'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      programa: programa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

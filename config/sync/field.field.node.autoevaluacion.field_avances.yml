@@ -1,0 +1,27 @@
+uuid: ab7cf44c-82e8-47ad-9a4d-158e2ff6648c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_avances
+    - node.type.autoevaluacion
+  module:
+    - file
+id: node.autoevaluacion.field_avances
+field_name: field_avances
+entity_type: node
+bundle: autoevaluacion
+label: Avances
+description: 'Este campo es para los avances'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'autoevaluacion/avances/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'xls xlsx'
+  max_filesize: ''
+  description_field: false
+field_type: file

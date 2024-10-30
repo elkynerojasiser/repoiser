@@ -1,0 +1,195 @@
+uuid: aa532c2b-9552-48ea-a41b-7af6230420fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenido.field_archivos
+    - field.field.node.contenido.field_codigo
+    - field.field.node.contenido.field_componente
+    - field.field.node.contenido.field_fecha_contenido
+    - field.field.node.contenido.field_imagen_portada_contenido
+    - field.field.node.contenido.field_metadatos
+    - field.field.node.contenido.field_programa_contenido
+    - field.field.node.contenido.field_resumen_contenido
+    - field.field.node.contenido.field_semestre
+    - field.field.node.contenido.field_tipo_de_curso
+    - field.field.node.contenido.field_uri_contenido
+    - field.field.node.contenido.field_validacion_comite
+    - field.field.node.contenido.field_version_del_plan_de_estudi
+    - image.style.thumbnail
+    - node.type.contenido
+  module:
+    - datetime
+    - entity_reference_revisions
+    - file
+    - image
+    - link
+    - path
+id: node.contenido.default
+targetEntityType: node
+bundle: contenido
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_archivos:
+    type: file_generic
+    weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_codigo:
+    type: string_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_componente:
+    type: string_textfield
+    weight: 124
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fecha_contenido:
+    type: datetime_default
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imagen_portada_contenido:
+    type: image_image
+    weight: 126
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_metadatos:
+    type: entity_reference_revisions_autocomplete
+    weight: 129
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_programa_contenido:
+    type: entity_reference_autocomplete
+    weight: 130
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_resumen_contenido:
+    type: string_textarea
+    weight: 131
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_semestre:
+    type: string_textfield
+    weight: 132
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipo_de_curso:
+    type: string_textfield
+    weight: 133
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_uri_contenido:
+    type: link_default
+    weight: 134
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_validacion_comite:
+    type: boolean_checkbox
+    weight: 135
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_version_del_plan_de_estudi:
+    type: string_textfield
+    weight: 136
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

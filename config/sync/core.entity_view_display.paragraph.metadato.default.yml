@@ -1,0 +1,30 @@
+uuid: 4c277dca-6f55-4e63-aa08-df6875512316
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.metadato.field_campo_metadato
+    - field.field.paragraph.metadato.field_valor_metadato
+    - paragraphs.paragraphs_type.metadato
+id: paragraph.metadato.default
+targetEntityType: paragraph
+bundle: metadato
+mode: default
+content:
+  field_campo_metadato:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_valor_metadato:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

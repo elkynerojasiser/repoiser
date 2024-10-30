@@ -1,0 +1,20 @@
+uuid: 5f7a742c-26e6-4b3c-aa12-12b2969f05a8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_periodo
+field_name: field_periodo
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

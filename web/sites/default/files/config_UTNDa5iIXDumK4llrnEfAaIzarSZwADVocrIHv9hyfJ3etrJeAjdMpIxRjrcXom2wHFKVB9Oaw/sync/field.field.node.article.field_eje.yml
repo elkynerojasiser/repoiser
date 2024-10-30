@@ -1,0 +1,19 @@
+uuid: e1ee2552-4a10-4012-90df-e5b8948e6b60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eje
+    - node.type.article
+id: node.article.field_eje
+field_name: field_eje
+entity_type: node
+bundle: article
+label: Eje
+description: 'Por favor asigne el eje (Instituto)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

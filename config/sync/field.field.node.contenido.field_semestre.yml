@@ -1,0 +1,19 @@
+uuid: 28049d00-d0b1-4e27-a917-a14fbe6a2cf2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_semestre
+    - node.type.contenido
+id: node.contenido.field_semestre
+field_name: field_semestre
+entity_type: node
+bundle: contenido
+label: Semestre
+description: 'Por favor ingrese el semestre que está cursando'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

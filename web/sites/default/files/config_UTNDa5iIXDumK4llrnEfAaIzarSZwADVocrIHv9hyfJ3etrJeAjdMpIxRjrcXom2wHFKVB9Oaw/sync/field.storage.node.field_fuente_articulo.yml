@@ -1,0 +1,19 @@
+uuid: 845eb7b1-8dd1-4d0a-bbc0-a2c0559b9712
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_fuente_articulo
+field_name: field_fuente_articulo
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

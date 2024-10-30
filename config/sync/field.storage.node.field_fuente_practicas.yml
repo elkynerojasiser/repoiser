@@ -1,0 +1,19 @@
+uuid: 23bef17f-cc21-4868-9b8e-66c779103465
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_fuente_practicas
+field_name: field_fuente_practicas
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

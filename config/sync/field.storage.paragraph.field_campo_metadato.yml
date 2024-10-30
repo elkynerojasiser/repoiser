@@ -1,0 +1,20 @@
+uuid: 8637032f-69a6-40bd-9fcc-162aca52ac1c
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_campo_metadato
+field_name: field_campo_metadato
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

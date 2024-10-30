@@ -1,0 +1,11 @@
+uuid: 8b14068f-5082-462d-928d-92c3cfd4d57a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.periodo_academico
+id: taxonomy_term.periodo_academico
+target_entity_type_id: taxonomy_term
+target_bundle: periodo_academico
+default_langcode: site_default
+language_alterable: true

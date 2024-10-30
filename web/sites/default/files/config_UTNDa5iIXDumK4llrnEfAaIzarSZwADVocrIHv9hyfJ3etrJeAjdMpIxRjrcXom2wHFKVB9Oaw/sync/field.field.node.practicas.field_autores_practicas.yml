@@ -1,0 +1,19 @@
+uuid: 666abb04-d0f7-4b98-89ac-186bc6cf2dd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autores_practicas
+    - node.type.practicas
+id: node.practicas.field_autores_practicas
+field_name: field_autores_practicas
+entity_type: node
+bundle: practicas
+label: Autor(es)
+description: 'Campo para los autores de la práctica'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

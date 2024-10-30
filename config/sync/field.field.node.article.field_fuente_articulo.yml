@@ -1,0 +1,23 @@
+uuid: 5c33bde1-9fba-4c9c-a1da-9e3e9eeea933
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fuente_articulo
+    - node.type.article
+  module:
+    - link
+id: node.article.field_fuente_articulo
+field_name: field_fuente_articulo
+entity_type: node
+bundle: article
+label: Fuente
+description: 'Si este artículo se realizó con alizanza con otro instituto superior, por favor ingrese la url del mismo publicado.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

@@ -1,0 +1,27 @@
+uuid: d1b2f952-8f93-43cb-9ff5-1fbc364017df
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informes_profesores
+    - node.type.gestion_academica
+  module:
+    - file
+id: node.gestion_academica.field_informes_profesores
+field_name: field_informes_profesores
+entity_type: node
+bundle: gestion_academica
+label: 'Informes profesores'
+description: 'Este es el campo de todos los informes que cada profesor entrega'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'gacademica/informesprof[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'zip doc docx xls xlsx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

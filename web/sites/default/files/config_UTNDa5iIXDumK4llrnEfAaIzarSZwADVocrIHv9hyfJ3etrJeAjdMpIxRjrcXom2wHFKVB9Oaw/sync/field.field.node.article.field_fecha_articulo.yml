@@ -1,0 +1,21 @@
+uuid: e2be40d5-615a-46fd-b1bc-0ba66fc3e122
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_articulo
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_fecha_articulo
+field_name: field_fecha_articulo
+entity_type: node
+bundle: article
+label: Fecha
+description: 'Ingrese la fecha en que se está publicando el artículo'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

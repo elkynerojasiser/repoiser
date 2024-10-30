@@ -1,0 +1,27 @@
+uuid: 817b186b-ee1f-4146-8015-ef46dd20ecb3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plan_de_mejoramiento
+    - node.type.autoevaluacion
+  module:
+    - file
+id: node.autoevaluacion.field_plan_de_mejoramiento
+field_name: field_plan_de_mejoramiento
+entity_type: node
+bundle: autoevaluacion
+label: 'Plan de mejoramiento'
+description: 'Este campo es para el plan de mejoramiento'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'autoevaluacion/pmejoramiento[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'xls xlsx'
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,27 @@
+uuid: 016e7d9b-641a-4179-80fe-3ae1e1753edc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documentos
+    - node.type.acreditacion
+  module:
+    - file
+id: node.acreditacion.field_documentos
+field_name: field_documentos
+entity_type: node
+bundle: acreditacion
+label: Documentos
+description: 'Este campo es para los documentos'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'acreditacion/documentos[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'docx doc pdf xls xlsx'
+  max_filesize: ''
+  description_field: false
+field_type: file
