@@ -1,0 +1,32 @@
+uuid: 288c30d2-eb0e-4dc2-bec9-ae3456157f53
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.condiciones_iniciales.field_concepto
+    - field.field.paragraph.condiciones_iniciales.field_documento_ci
+    - paragraphs.paragraphs_type.condiciones_iniciales
+  module:
+    - entity_reference_revisions
+id: paragraph.condiciones_iniciales.default
+targetEntityType: paragraph
+bundle: condiciones_iniciales
+mode: default
+content:
+  field_concepto:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_documento_ci:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

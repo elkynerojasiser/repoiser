@@ -1,0 +1,22 @@
+uuid: a6ab1e9a-a5eb-4fec-a72f-b9913f5627de
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.planes_mejoramiento
+id: node.planes_mejoramiento.promote
+field_name: promote
+entity_type: node
+bundle: planes_mejoramiento
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

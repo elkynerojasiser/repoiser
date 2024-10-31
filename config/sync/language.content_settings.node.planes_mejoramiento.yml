@@ -1,0 +1,11 @@
+uuid: 40246e46-b6ca-483d-a277-1e1fe8cfe6e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.planes_mejoramiento
+id: node.planes_mejoramiento
+target_entity_type_id: node
+target_bundle: planes_mejoramiento
+default_langcode: site_default
+language_alterable: false

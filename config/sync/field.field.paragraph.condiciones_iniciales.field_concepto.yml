@@ -1,0 +1,19 @@
+uuid: dd84b91e-bd6a-4498-b394-24db6fa28db3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_concepto
+    - paragraphs.paragraphs_type.condiciones_iniciales
+id: paragraph.condiciones_iniciales.field_concepto
+field_name: field_concepto
+entity_type: paragraph
+bundle: condiciones_iniciales
+label: Concepto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,44 @@
+uuid: 2d6b4b72-5bf0-49ed-bc43-0f60b33401ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.condiciones_iniciales.field_concepto
+    - field.field.paragraph.condiciones_iniciales.field_documento_ci
+    - paragraphs.paragraphs_type.condiciones_iniciales
+  module:
+    - paragraphs
+id: paragraph.condiciones_iniciales.default
+targetEntityType: paragraph
+bundle: condiciones_iniciales
+mode: default
+content:
+  field_concepto:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_documento_ci:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

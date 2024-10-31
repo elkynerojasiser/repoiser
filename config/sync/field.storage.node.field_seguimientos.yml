@@ -1,0 +1,21 @@
+uuid: a4fa02e0-7a06-4f99-8747-847bcbb311af
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_seguimientos
+field_name: field_seguimientos
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

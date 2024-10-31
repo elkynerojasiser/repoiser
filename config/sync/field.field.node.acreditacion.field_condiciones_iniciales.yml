@@ -1,0 +1,40 @@
+uuid: 1bd7a625-e918-4c88-8241-3c688fb11d9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_condiciones_iniciales
+    - node.type.acreditacion
+    - paragraphs.paragraphs_type.condiciones_iniciales
+  module:
+    - entity_reference_revisions
+id: node.acreditacion.field_condiciones_iniciales
+field_name: field_condiciones_iniciales
+entity_type: node
+bundle: acreditacion
+label: 'Condiciones Iniciales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      condiciones_iniciales: condiciones_iniciales
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: true
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: false
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

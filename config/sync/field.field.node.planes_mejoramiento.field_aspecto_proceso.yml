@@ -1,0 +1,33 @@
+uuid: c9dfa0ca-9477-45a0-b0d8-abfad636c2a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspecto_proceso
+    - node.type.planes_mejoramiento
+    - taxonomy.vocabulary.aspecto_proceso
+  content:
+    - 'taxonomy_term:aspecto_proceso:83fbd4fc-1379-4b4b-ae80-6f0216f4aeb6'
+id: node.planes_mejoramiento.field_aspecto_proceso
+field_name: field_aspecto_proceso
+entity_type: node
+bundle: planes_mejoramiento
+label: 'Aspecto - Proceso'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 83fbd4fc-1379-4b4b-ae80-6f0216f4aeb6
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      aspecto_proceso: aspecto_proceso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

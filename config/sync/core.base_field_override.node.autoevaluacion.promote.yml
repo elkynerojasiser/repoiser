@@ -1,0 +1,22 @@
+uuid: 5fbde09d-05ec-45b4-97a7-19e514251920
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autoevaluacion
+id: node.autoevaluacion.promote
+field_name: promote
+entity_type: node
+bundle: autoevaluacion
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean
