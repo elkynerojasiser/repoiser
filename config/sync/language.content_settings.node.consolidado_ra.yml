@@ -1,0 +1,11 @@
+uuid: 7693e336-1691-4253-8042-f1f09ebc5f75
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.consolidado_ra
+id: node.consolidado_ra
+target_entity_type_id: node
+target_bundle: consolidado_ra
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: d071f8ca-4570-47f1-a993-33f876448b0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_programaticos
+id: node.contenidos_programaticos.promote
+field_name: promote
+entity_type: node
+bundle: contenidos_programaticos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

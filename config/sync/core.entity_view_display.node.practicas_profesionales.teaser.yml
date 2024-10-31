@@ -1,0 +1,35 @@
+uuid: 0ea83d16-b002-4f51-a3d5-2fbddedc77b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.practicas_profesionales.field_anexos_practica
+    - field.field.node.practicas_profesionales.field_aspecto_proceso
+    - field.field.node.practicas_profesionales.field_empresa_entidad
+    - field.field.node.practicas_profesionales.field_estudiante
+    - field.field.node.practicas_profesionales.field_informe_final_practica
+    - field.field.node.practicas_profesionales.field_periodo
+    - field.field.node.practicas_profesionales.field_programa
+    - node.type.practicas_profesionales
+  module:
+    - user
+id: node.practicas_profesionales.teaser
+targetEntityType: node
+bundle: practicas_profesionales
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_anexos_practica: true
+  field_aspecto_proceso: true
+  field_empresa_entidad: true
+  field_estudiante: true
+  field_informe_final_practica: true
+  field_periodo: true
+  field_programa: true
+  langcode: true

@@ -1,0 +1,29 @@
+uuid: a1a9a0b7-e2f6-4159-a484-1722e5dcddd1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periodo
+    - node.type.practicas_profesionales
+    - taxonomy.vocabulary.periodo_academico
+id: node.practicas_profesionales.field_periodo
+field_name: field_periodo
+entity_type: node
+bundle: practicas_profesionales
+label: 'Periodo Académico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      periodo_academico: periodo_academico
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,9 @@
+uuid: beb5cb4f-67de-425b-97d7-58e5e471c37a
+langcode: es
+status: true
+dependencies: {  }
+name: Asignaturas
+vid: asignaturas
+description: null
+weight: 0
+new_revision: false

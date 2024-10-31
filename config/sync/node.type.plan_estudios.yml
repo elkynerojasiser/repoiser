@@ -1,0 +1,17 @@
+uuid: ea0e3c20-2d1c-4a22-8f13-7e39d9224836
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Plan de Estudios'
+type: plan_estudios
+description: null
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

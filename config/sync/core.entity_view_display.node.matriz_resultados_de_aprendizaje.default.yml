@@ -1,0 +1,49 @@
+uuid: 50717b85-0767-405d-b7fd-3cd1ab76609f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.matriz_resultados_de_aprendizaje.field_aspecto_proceso
+    - field.field.node.matriz_resultados_de_aprendizaje.field_documento_matriz_ra
+    - field.field.node.matriz_resultados_de_aprendizaje.field_programa
+    - node.type.matriz_resultados_de_aprendizaje
+  module:
+    - entity_reference_revisions
+    - user
+id: node.matriz_resultados_de_aprendizaje.default
+targetEntityType: node
+bundle: matriz_resultados_de_aprendizaje
+mode: default
+content:
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_documento_matriz_ra:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

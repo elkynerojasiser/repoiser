@@ -1,0 +1,29 @@
+uuid: e9a787e1-cc25-4cdf-8e97-2a2dd65bfaa7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programa
+    - node.type.plan_estudios
+    - node.type.programa
+id: node.plan_estudios.field_programa
+field_name: field_programa
+entity_type: node
+bundle: plan_estudios
+label: Programa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      programa: programa
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

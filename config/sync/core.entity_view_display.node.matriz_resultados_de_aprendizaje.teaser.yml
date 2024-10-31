@@ -1,0 +1,27 @@
+uuid: 8122f39d-af6a-42dc-972c-64274c23e03f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.matriz_resultados_de_aprendizaje.field_aspecto_proceso
+    - field.field.node.matriz_resultados_de_aprendizaje.field_documento_matriz_ra
+    - field.field.node.matriz_resultados_de_aprendizaje.field_programa
+    - node.type.matriz_resultados_de_aprendizaje
+  module:
+    - user
+id: node.matriz_resultados_de_aprendizaje.teaser
+targetEntityType: node
+bundle: matriz_resultados_de_aprendizaje
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_aspecto_proceso: true
+  field_documento_matriz_ra: true
+  field_programa: true
+  langcode: true

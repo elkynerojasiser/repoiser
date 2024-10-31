@@ -1,0 +1,18 @@
+uuid: 3b1c5a1f-6887-424d-81be-d63b2cac85c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informe_ra
+id: node.informe_ra.title
+field_name: title
+entity_type: node
+bundle: informe_ra
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

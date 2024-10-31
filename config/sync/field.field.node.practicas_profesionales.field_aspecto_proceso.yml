@@ -1,0 +1,33 @@
+uuid: 2fd92de9-f37b-4e24-80d0-30895bfbafef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspecto_proceso
+    - node.type.practicas_profesionales
+    - taxonomy.vocabulary.aspecto_proceso
+  content:
+    - 'taxonomy_term:aspecto_proceso:f2945318-ec1d-4526-9bf5-e75790bd63bd'
+id: node.practicas_profesionales.field_aspecto_proceso
+field_name: field_aspecto_proceso
+entity_type: node
+bundle: practicas_profesionales
+label: 'Aspecto - Proceso'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: f2945318-ec1d-4526-9bf5-e75790bd63bd
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      aspecto_proceso: aspecto_proceso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

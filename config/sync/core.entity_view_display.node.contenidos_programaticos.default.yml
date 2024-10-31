@@ -1,0 +1,76 @@
+uuid: 6e53dee7-ceaf-41f2-860c-e3e98d0eabd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenidos_programaticos.field_asignatura
+    - field.field.node.contenidos_programaticos.field_aspecto_proceso
+    - field.field.node.contenidos_programaticos.field_documento_contenido
+    - field.field.node.contenidos_programaticos.field_periodo
+    - field.field.node.contenidos_programaticos.field_programa
+    - field.field.node.contenidos_programaticos.field_semestre
+    - node.type.contenidos_programaticos
+  module:
+    - entity_reference_revisions
+    - user
+id: node.contenidos_programaticos.default
+targetEntityType: node
+bundle: contenidos_programaticos
+mode: default
+content:
+  field_asignatura:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_documento_contenido:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_periodo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_semestre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: c2d02f9a-d9f8-4a4b-9d02-4e29ea7ad185
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informe_ra
+id: node.informe_ra
+target_entity_type_id: node
+target_bundle: informe_ra
+default_langcode: site_default
+language_alterable: false

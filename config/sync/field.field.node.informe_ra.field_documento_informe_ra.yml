@@ -1,0 +1,40 @@
+uuid: b571a04c-8b63-4ffe-b403-ab691d733f82
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documento_informe_ra
+    - node.type.informe_ra
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: node.informe_ra.field_documento_informe_ra
+field_name: field_documento_informe_ra
+entity_type: node
+bundle: informe_ra
+label: 'Documento Informe'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: false
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: true
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

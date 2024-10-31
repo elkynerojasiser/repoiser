@@ -1,0 +1,45 @@
+uuid: e27f60e9-99be-4a09-bf51-f690aa0a9eda
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.informe_ra.body
+    - field.field.node.informe_ra.field_asignatura
+    - field.field.node.informe_ra.field_aspecto_proceso
+    - field.field.node.informe_ra.field_corte
+    - field.field.node.informe_ra.field_docente
+    - field.field.node.informe_ra.field_documento_informe_ra
+    - field.field.node.informe_ra.field_periodo
+    - field.field.node.informe_ra.field_programa
+    - node.type.informe_ra
+  module:
+    - text
+    - user
+id: node.informe_ra.teaser
+targetEntityType: node
+bundle: informe_ra
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_asignatura: true
+  field_aspecto_proceso: true
+  field_corte: true
+  field_docente: true
+  field_documento_informe_ra: true
+  field_periodo: true
+  field_programa: true
+  langcode: true

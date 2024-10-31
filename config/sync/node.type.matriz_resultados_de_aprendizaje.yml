@@ -1,0 +1,17 @@
+uuid: dbc018ca-c1c2-41b8-8774-7cf3a0a0602c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Matriz Resultados de Aprendizaje'
+type: matriz_resultados_de_aprendizaje
+description: null
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

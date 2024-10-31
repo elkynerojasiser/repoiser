@@ -1,0 +1,29 @@
+uuid: 6aa60118-536f-4e27-80bb-9531dafa4937
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_asignatura
+    - node.type.informe_ra
+    - taxonomy.vocabulary.asignaturas
+id: node.informe_ra.field_asignatura
+field_name: field_asignatura
+entity_type: node
+bundle: informe_ra
+label: Asignatura
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      asignaturas: asignaturas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

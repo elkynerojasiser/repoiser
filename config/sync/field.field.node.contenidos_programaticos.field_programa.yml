@@ -1,0 +1,29 @@
+uuid: 61fb8d06-7f89-4a98-b0a0-e93e4f4dac4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programa
+    - node.type.contenidos_programaticos
+    - node.type.programa
+id: node.contenidos_programaticos.field_programa
+field_name: field_programa
+entity_type: node
+bundle: contenidos_programaticos
+label: Programa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      programa: programa
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

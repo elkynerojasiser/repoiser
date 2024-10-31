@@ -1,0 +1,11 @@
+uuid: 2de90016-33b2-476f-8378-b4552c323f42
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.plan_estudios
+id: node.plan_estudios
+target_entity_type_id: node
+target_bundle: plan_estudios
+default_langcode: site_default
+language_alterable: false

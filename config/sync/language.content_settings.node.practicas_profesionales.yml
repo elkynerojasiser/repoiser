@@ -1,0 +1,11 @@
+uuid: 831c6db2-dd13-4d5c-91c0-f3ba9716e83f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.practicas_profesionales
+id: node.practicas_profesionales
+target_entity_type_id: node
+target_bundle: practicas_profesionales
+default_langcode: site_default
+language_alterable: false

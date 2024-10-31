@@ -1,0 +1,94 @@
+uuid: 65b6e6d1-5d9d-4012-a826-7e0e9a76dd4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.informe_ra.body
+    - field.field.node.informe_ra.field_asignatura
+    - field.field.node.informe_ra.field_aspecto_proceso
+    - field.field.node.informe_ra.field_corte
+    - field.field.node.informe_ra.field_docente
+    - field.field.node.informe_ra.field_documento_informe_ra
+    - field.field.node.informe_ra.field_periodo
+    - field.field.node.informe_ra.field_programa
+    - node.type.informe_ra
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.informe_ra.default
+targetEntityType: node
+bundle: informe_ra
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_asignatura:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_corte:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_docente:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_documento_informe_ra:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_periodo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

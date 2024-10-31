@@ -1,0 +1,17 @@
+uuid: 9d76deb5-0d4d-4d91-b5d6-1b8decb83d8f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Prácticas Profesionales'
+type: practicas_profesionales
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

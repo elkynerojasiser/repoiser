@@ -1,0 +1,18 @@
+uuid: 647bec48-6354-40ce-be18-89e2afce6393
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.consolidado_ra
+id: node.consolidado_ra.title
+field_name: title
+entity_type: node
+bundle: consolidado_ra
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

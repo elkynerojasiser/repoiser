@@ -1,0 +1,29 @@
+uuid: a0fafa16-22e6-46ae-80a8-39842b56ecf6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programa
+    - node.type.consolidado_ra
+    - node.type.programa
+id: node.consolidado_ra.field_programa
+field_name: field_programa
+entity_type: node
+bundle: consolidado_ra
+label: Programa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      programa: programa
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

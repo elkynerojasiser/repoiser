@@ -1,0 +1,18 @@
+uuid: cb75298d-4a20-42ab-903c-f2d4ce03c22a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.plan_estudios
+id: node.plan_estudios.title
+field_name: title
+entity_type: node
+bundle: plan_estudios
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

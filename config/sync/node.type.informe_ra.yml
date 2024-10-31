@@ -1,0 +1,17 @@
+uuid: d6e62374-bf45-4529-a56e-a8720893cdca
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Informe Resultados de Aprendizaje'
+type: informe_ra
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

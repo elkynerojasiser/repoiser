@@ -1,0 +1,11 @@
+uuid: 710d7a91-b9cd-4c73-8b06-6ed72d4df8f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_programaticos
+id: node.contenidos_programaticos
+target_entity_type_id: node
+target_bundle: contenidos_programaticos
+default_langcode: site_default
+language_alterable: false
