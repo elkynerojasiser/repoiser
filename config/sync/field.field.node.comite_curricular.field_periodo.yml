@@ -1,0 +1,29 @@
+uuid: 4aa834e7-94df-4f5d-8b7e-a9d764a2680d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periodo
+    - node.type.comite_curricular
+    - taxonomy.vocabulary.periodo_academico
+id: node.comite_curricular.field_periodo
+field_name: field_periodo
+entity_type: node
+bundle: comite_curricular
+label: 'Periodo Académico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      periodo_academico: periodo_academico
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

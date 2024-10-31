@@ -1,0 +1,18 @@
+uuid: 934ae0eb-0718-46f7-bc47-427a7cee7203
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informe_docente_asignatura
+id: node.informe_docente_asignatura.title
+field_name: title
+entity_type: node
+bundle: informe_docente_asignatura
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

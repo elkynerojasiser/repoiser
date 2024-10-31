@@ -1,0 +1,24 @@
+uuid: fa87001e-20d9-46d4-b814-99e87ef8b02f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.consolidado_informe_docente
+  module:
+    - text
+id: node.consolidado_informe_docente.body
+field_name: body
+entity_type: node
+bundle: consolidado_informe_docente
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,33 @@
+uuid: 13d797f9-8841-4b9f-a470-3a84e479ab08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspecto_proceso
+    - node.type.consolidado_informe_docente
+    - taxonomy.vocabulary.aspecto_proceso
+  content:
+    - 'taxonomy_term:aspecto_proceso:4dcc0e02-0184-4cc6-a129-0f252aa30249'
+id: node.consolidado_informe_docente.field_aspecto_proceso
+field_name: field_aspecto_proceso
+entity_type: node
+bundle: consolidado_informe_docente
+label: 'Aspecto - Proceso'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 4dcc0e02-0184-4cc6-a129-0f252aa30249
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      aspecto_proceso: aspecto_proceso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

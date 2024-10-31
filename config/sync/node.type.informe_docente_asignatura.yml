@@ -1,0 +1,17 @@
+uuid: c974d9bc-07ad-4595-a2c0-54c80d4644cd
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Informe Docente por Asignatura'
+type: informe_docente_asignatura
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

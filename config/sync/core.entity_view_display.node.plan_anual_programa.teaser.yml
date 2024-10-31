@@ -1,0 +1,31 @@
+uuid: 845aef41-798e-4a80-9c65-727ca4d3674b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.plan_anual_programa.field_anexos_pap
+    - field.field.node.plan_anual_programa.field_ano
+    - field.field.node.plan_anual_programa.field_aspecto_proceso
+    - field.field.node.plan_anual_programa.field_documento_plan_anual
+    - field.field.node.plan_anual_programa.field_programa
+    - node.type.plan_anual_programa
+  module:
+    - user
+id: node.plan_anual_programa.teaser
+targetEntityType: node
+bundle: plan_anual_programa
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_anexos_pap: true
+  field_ano: true
+  field_aspecto_proceso: true
+  field_documento_plan_anual: true
+  field_programa: true
+  langcode: true

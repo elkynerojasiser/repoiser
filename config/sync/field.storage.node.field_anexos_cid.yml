@@ -1,0 +1,21 @@
+uuid: 0480ec4c-32a5-4b45-8e8f-240b7fa843b4
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_anexos_cid
+field_name: field_anexos_cid
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

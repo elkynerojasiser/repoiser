@@ -1,0 +1,17 @@
+uuid: 00336726-1c05-4e95-aaa4-cb76eee54063
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Consolidado Informe Docente'
+type: consolidado_informe_docente
+description: null
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

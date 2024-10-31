@@ -1,0 +1,33 @@
+uuid: b3bfaed8-6175-433e-a86c-c093c5915092
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspecto_proceso
+    - node.type.comite_curricular
+    - taxonomy.vocabulary.aspecto_proceso
+  content:
+    - 'taxonomy_term:aspecto_proceso:4dcc0e02-0184-4cc6-a129-0f252aa30249'
+id: node.comite_curricular.field_aspecto_proceso
+field_name: field_aspecto_proceso
+entity_type: node
+bundle: comite_curricular
+label: 'Aspecto - Proceso'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 4dcc0e02-0184-4cc6-a129-0f252aa30249
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      aspecto_proceso: aspecto_proceso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

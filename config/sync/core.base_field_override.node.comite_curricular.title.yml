@@ -1,0 +1,18 @@
+uuid: dedb9ee5-b579-406e-aaf6-b187493a3c77
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.comite_curricular
+id: node.comite_curricular.title
+field_name: title
+entity_type: node
+bundle: comite_curricular
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

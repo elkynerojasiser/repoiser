@@ -1,0 +1,29 @@
+uuid: fe3b80b5-7306-4859-ac13-5b2a0d43659b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_corte
+    - node.type.informe_docente_asignatura
+    - taxonomy.vocabulary.corte
+id: node.informe_docente_asignatura.field_corte
+field_name: field_corte
+entity_type: node
+bundle: informe_docente_asignatura
+label: Corte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      corte: corte
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

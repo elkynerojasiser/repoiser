@@ -1,0 +1,19 @@
+uuid: fa570459-4440-4f0f-b09a-d3fe3ccedf7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docente
+    - node.type.informe_docente_asignatura
+id: node.informe_docente_asignatura.field_docente
+field_name: field_docente
+entity_type: node
+bundle: informe_docente_asignatura
+label: Docente
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: 98b8d500-220f-40e1-ac40-86095b3b4874
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_convocatoria_cr
+    - node.type.comite_curricular
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: node.comite_curricular.field_convocatoria_cr
+field_name: field_convocatoria_cr
+entity_type: node
+bundle: comite_curricular
+label: Convocatoria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: false
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: true
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

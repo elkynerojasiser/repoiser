@@ -1,0 +1,21 @@
+uuid: 399393a7-4ecd-422e-b510-cfe99d141493
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha
+    - node.type.comite_curricular
+  module:
+    - datetime
+id: node.comite_curricular.field_fecha
+field_name: field_fecha
+entity_type: node
+bundle: comite_curricular
+label: Fecha
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

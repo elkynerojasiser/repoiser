@@ -1,0 +1,37 @@
+uuid: d302191e-3e9a-4cf9-9b21-b97eba65d0f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.comite_curricular.field_acta_cr
+    - field.field.node.comite_curricular.field_anexos_cr
+    - field.field.node.comite_curricular.field_aspecto_proceso
+    - field.field.node.comite_curricular.field_convocatoria_cr
+    - field.field.node.comite_curricular.field_fecha
+    - field.field.node.comite_curricular.field_lista_asistencia_cr
+    - field.field.node.comite_curricular.field_periodo
+    - field.field.node.comite_curricular.field_programa
+    - node.type.comite_curricular
+  module:
+    - user
+id: node.comite_curricular.teaser
+targetEntityType: node
+bundle: comite_curricular
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_acta_cr: true
+  field_anexos_cr: true
+  field_aspecto_proceso: true
+  field_convocatoria_cr: true
+  field_fecha: true
+  field_lista_asistencia_cr: true
+  field_periodo: true
+  field_programa: true
+  langcode: true

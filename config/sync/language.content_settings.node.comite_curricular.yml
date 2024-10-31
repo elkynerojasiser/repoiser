@@ -1,0 +1,11 @@
+uuid: 65b31965-ab94-4f6a-b7c3-7395eea50397
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.comite_curricular
+id: node.comite_curricular
+target_entity_type_id: node
+target_bundle: comite_curricular
+default_langcode: site_default
+language_alterable: false

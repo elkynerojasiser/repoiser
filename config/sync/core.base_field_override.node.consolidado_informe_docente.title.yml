@@ -1,0 +1,18 @@
+uuid: 6c908875-7d0e-46f2-b2a7-6fdd6fe70535
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.consolidado_informe_docente
+id: node.consolidado_informe_docente.title
+field_name: title
+entity_type: node
+bundle: consolidado_informe_docente
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
