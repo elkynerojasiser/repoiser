@@ -1,0 +1,30 @@
+uuid: 8d13b151-fed6-4ac0-b347-fee39bad347d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2a22becc-bc1e-4d85-b235-62f6f6e35aa4'
+  module:
+    - block_content
+    - system
+  theme:
+    - repo
+id: repo_dashboard
+theme: repo
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:2a22becc-bc1e-4d85-b235-62f6f6e35aa4'
+settings:
+  id: 'block_content:2a22becc-bc1e-4d85-b235-62f6f6e35aa4'
+  label: dashboard
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /dashboard
