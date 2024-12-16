@@ -16,14 +16,6 @@ targetEntityType: node
 bundle: registro_calificado
 mode: default
 content:
-  field_aspecto_proceso:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 105
-    region: content
   field_condiciones_rc:
     type: entity_reference_revisions_entity_view
     label: above
@@ -31,15 +23,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 106
-    region: content
-  field_programa:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 104
+    weight: 2
     region: content
   field_resolucion_rc:
     type: entity_reference_revisions_entity_view
@@ -48,12 +32,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  field_aspecto_proceso: true
+  field_programa: true
   langcode: true
