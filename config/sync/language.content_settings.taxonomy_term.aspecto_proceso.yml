@@ -1,0 +1,11 @@
+uuid: 060652e9-d3de-4536-ba92-338893840f11
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.aspecto_proceso
+id: taxonomy_term.aspecto_proceso
+target_entity_type_id: taxonomy_term
+target_bundle: aspecto_proceso
+default_langcode: site_default
+language_alterable: false

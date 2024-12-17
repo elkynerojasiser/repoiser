@@ -1,0 +1,10 @@
+uuid: 7dd04420-5bbd-4cc7-b5b8-05795ca1d34b
+langcode: es
+status: true
+dependencies: {  }
+id: metadato
+label: Metadato
+icon_uuid: null
+icon_default: null
+description: 'Es para guardar los metadatos de cualquier tipo de dato'
+behavior_plugins: {  }

@@ -1,0 +1,29 @@
+uuid: 5d368561-0598-4837-b213-a6d35f2c1fc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.plan_estudios.field_anexos_pe
+    - field.field.node.plan_estudios.field_aspecto_proceso
+    - field.field.node.plan_estudios.field_documento_plan_estudios
+    - field.field.node.plan_estudios.field_programa
+    - node.type.plan_estudios
+  module:
+    - user
+id: node.plan_estudios.teaser
+targetEntityType: node
+bundle: plan_estudios
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_anexos_pe: true
+  field_aspecto_proceso: true
+  field_documento_plan_estudios: true
+  field_programa: true
+  langcode: true

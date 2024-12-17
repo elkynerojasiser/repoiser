@@ -1,52 +1,24 @@
-
-<div class="container custom-acreditacion">
-	<article{{attributes.addClass('node','node--type-autoevaluacion','clearfix')}}>
-
-		<div{{content_attributes.addClass('node__content')}}>
-		{% if content.field_version %}
-		<div class="node__condiciones card card__field">
-			<div class="card-title">
-				<h3>Fecha de version</h3>
-			</div>
-			<div class="card-text-condiciones">
-				{{ content.field_version }}
+<div class="row d-flex justify-content-center">
+	<div class="col d-flex justify-content-center">
+		<h3 class="text-center">{{ label }}</h3>
+	</div>
+</div>
+<div class="container">
+	<div class="card p-3 mb-3">
+		<div class="row">
+			<div class="col">
+				<h3>Documento de autoevaluación</h3>
 			</div>
 		</div>
-		{% endif %}
+    {{ content.field_documento_autoevaluacion }}
+	</div>
 
-		{% if content.field_informe %}
-		<div class="node__cuadros__maestros card card__field">
-        	<div class="card-title">
-            	<h3>Informe</h3>
-        	</div>
-			<div class="card-text">
-            	{{ content.field_informe}}
-          	</div>
+	<div class="card p-3 mb-3">
+		<div class="row">
+			<div class="col">
+				<h3>Anexos</h3>
+			</div>
 		</div>
-		{% endif %}
-
-        {% if content.field_plan_de_mejoramiento %}
-		<div class="node__cuadros__maestros card card__field">
-        	<div class="card-title">
-            	<h3>Plan de mejoramiento</h3>
-        	</div>
-			<div class="card-text">
-            	{{ content.field_plan_de_mejoramiento}}
-          	</div>
-		</div>
-		{% endif %}
-
-        {% if content.field_avances %}
-		<div class="node__cuadros__maestros card card__field">
-        	<div class="card-title">
-            	<h3>Avances</h3>
-        	</div>
-			<div class="card-text">
-            	{{ content.field_avances}}
-          	</div>
-		</div>
-		{% endif %}
-        
-		</div>
-	</article>
+		{{ content.field_anexos }}
+	</div>
 </div>

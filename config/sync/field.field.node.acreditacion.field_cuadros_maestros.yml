@@ -1,0 +1,40 @@
+uuid: d9c2b9ba-edd3-4040-90ec-de799a0a32ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuadros_maestros
+    - node.type.acreditacion
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: node.acreditacion.field_cuadros_maestros
+field_name: field_cuadros_maestros
+entity_type: node
+bundle: acreditacion
+label: 'Cuadros Maestros'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: false
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: true
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

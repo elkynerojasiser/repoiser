@@ -1,0 +1,27 @@
+uuid: 0ebd6d7e-63dd-47de-8a24-c37de2fc263e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_asistencia
+    - node.type.gestion_academica
+  module:
+    - file
+id: node.gestion_academica.field_asistencia
+field_name: field_asistencia
+entity_type: node
+bundle: gestion_academica
+label: Asistencia
+description: 'Este campo es para las listas de asistencias de los comités curriculares'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'gacademica/asistencia[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'doc docx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

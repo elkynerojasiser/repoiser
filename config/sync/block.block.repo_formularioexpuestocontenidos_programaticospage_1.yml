@@ -1,0 +1,28 @@
+uuid: 10ebba45-38c1-4518-a777-acd272b5de7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.contenidos_programaticos
+  module:
+    - system
+    - views
+  theme:
+    - repo
+id: repo_formularioexpuestocontenidos_programaticospage_1
+theme: repo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:contenidos_programaticos-page_1'
+settings:
+  id: 'views_exposed_filter_block:contenidos_programaticos-page_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: 'Filtrar por'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/contenidos-programaticos/*'

@@ -1,0 +1,11 @@
+uuid: 1c77873a-95db-40aa-a855-a76ff3d49d9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.anos
+id: taxonomy_term.anos
+target_entity_type_id: taxonomy_term
+target_bundle: anos
+default_langcode: site_default
+language_alterable: false

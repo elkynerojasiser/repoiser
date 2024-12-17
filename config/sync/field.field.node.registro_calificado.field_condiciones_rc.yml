@@ -1,0 +1,37 @@
+uuid: f08bb34b-f8d3-41e3-bf41-d2bfe233383f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_condiciones_rc
+    - node.type.registro_calificado
+    - paragraphs.paragraphs_type.condiciones_rc
+  module:
+    - entity_reference_revisions
+id: node.registro_calificado.field_condiciones_rc
+field_name: field_condiciones_rc
+entity_type: node
+bundle: registro_calificado
+label: Condiciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      condiciones_rc: condiciones_rc
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_rc:
+        weight: 4
+        enabled: true
+      documento:
+        weight: 5
+        enabled: false
+      metadato:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

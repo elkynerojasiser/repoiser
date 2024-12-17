@@ -1,0 +1,34 @@
+uuid: d56a559d-3c54-4924-a29e-b2887bc2c30a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.metadato.field_campo_metadato
+    - field.field.paragraph.metadato.field_valor_metadato
+    - paragraphs.paragraphs_type.metadato
+id: paragraph.metadato.default
+targetEntityType: paragraph
+bundle: metadato
+mode: default
+content:
+  field_campo_metadato:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_valor_metadato:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

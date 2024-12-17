@@ -1,0 +1,29 @@
+uuid: f353c2df-5cdf-4eea-bf63-3357df4ede1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.registro_calificado.field_aspecto_proceso
+    - field.field.node.registro_calificado.field_condiciones_rc
+    - field.field.node.registro_calificado.field_programa
+    - field.field.node.registro_calificado.field_resolucion_rc
+    - node.type.registro_calificado
+  module:
+    - user
+id: node.registro_calificado.teaser
+targetEntityType: node
+bundle: registro_calificado
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_aspecto_proceso: true
+  field_condiciones_rc: true
+  field_programa: true
+  field_resolucion_rc: true
+  langcode: true

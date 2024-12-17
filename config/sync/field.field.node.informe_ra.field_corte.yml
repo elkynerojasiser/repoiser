@@ -1,0 +1,29 @@
+uuid: 7449742a-2847-416f-93d8-d8bdb96a2639
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_corte
+    - node.type.informe_ra
+    - taxonomy.vocabulary.corte
+id: node.informe_ra.field_corte
+field_name: field_corte
+entity_type: node
+bundle: informe_ra
+label: Corte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      corte: corte
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

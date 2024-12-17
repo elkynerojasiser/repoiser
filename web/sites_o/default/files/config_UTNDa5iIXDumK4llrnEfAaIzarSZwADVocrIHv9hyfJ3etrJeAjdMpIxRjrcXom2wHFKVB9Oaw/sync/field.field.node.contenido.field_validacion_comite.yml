@@ -1,0 +1,21 @@
+uuid: 70a2a76d-86fc-4cbf-873c-780040f0ca9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_validacion_comite
+    - node.type.contenido
+id: node.contenido.field_validacion_comite
+field_name: field_validacion_comite
+entity_type: node
+bundle: contenido
+label: 'Validación de comité'
+description: 'Ese es para el campo de validación del comité'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Aceptado
+  off_label: Rechazado
+field_type: boolean

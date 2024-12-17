@@ -1,0 +1,33 @@
+uuid: 94a5f9ea-317b-4871-a661-8ce41d795798
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aspecto_proceso
+    - node.type.contenidos_programaticos
+    - taxonomy.vocabulary.aspecto_proceso
+  content:
+    - 'taxonomy_term:aspecto_proceso:f2945318-ec1d-4526-9bf5-e75790bd63bd'
+id: node.contenidos_programaticos.field_aspecto_proceso
+field_name: field_aspecto_proceso
+entity_type: node
+bundle: contenidos_programaticos
+label: 'Aspecto - Proceso'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: f2945318-ec1d-4526-9bf5-e75790bd63bd
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      aspecto_proceso: aspecto_proceso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

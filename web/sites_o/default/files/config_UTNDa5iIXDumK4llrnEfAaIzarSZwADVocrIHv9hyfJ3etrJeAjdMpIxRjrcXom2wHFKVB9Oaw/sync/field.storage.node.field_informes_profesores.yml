@@ -1,0 +1,23 @@
+uuid: 4d2367d9-b064-4332-ae26-32177f894ef2
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_informes_profesores
+field_name: field_informes_profesores
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

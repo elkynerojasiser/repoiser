@@ -1,0 +1,11 @@
+uuid: a6707fa9-7f64-40be-b62a-3bf7044d7a14
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.consolidado_informe_docente
+id: node.consolidado_informe_docente
+target_entity_type_id: node
+target_bundle: consolidado_informe_docente
+default_langcode: site_default
+language_alterable: false

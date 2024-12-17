@@ -1,0 +1,33 @@
+uuid: 52a169c0-62fa-4308-8cdb-cec6f42e4852
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo_de_contenido_articulo
+field_name: field_tipo_de_contenido_articulo
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: articulo_cientifico
+      label: 'Artículo científico'
+    -
+      value: informe_tecnico
+      label: 'Informe técnico'
+    -
+      value: articulo_de_revista
+      label: 'Artículo de revista'
+    -
+      value: tesis
+      label: Tesis
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 2370f997-5ab6-4370-a891-1f708a4beb6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informes_academicos
+    - node.type.gestion_academica
+  module:
+    - file
+id: node.gestion_academica.field_informes_academicos
+field_name: field_informes_academicos
+entity_type: node
+bundle: gestion_academica
+label: 'Informes académicos'
+description: 'Este campo es para los informes académicos del programa'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'gacademica/informesaca[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'xls xlsx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

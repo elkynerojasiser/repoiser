@@ -1,0 +1,22 @@
+uuid: 1dd0dc8d-a45f-40b2-b934-515c8bc75d1f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: consolidado_informe_docente
+label: 'Consolidado Informe Docente'
+type: 'canonical_entities:node'
+pattern: '/gestion-academica/informe-docente/informe-docente-consolidado/[node:title]'
+selection_criteria:
+  82506f3f-f489-4b16-b890-309e3c3ad74c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 82506f3f-f489-4b16-b890-309e3c3ad74c
+    context_mapping:
+      node: node
+    bundles:
+      consolidado_informe_docente: consolidado_informe_docente
+selection_logic: and
+weight: -5
+relationships: {  }

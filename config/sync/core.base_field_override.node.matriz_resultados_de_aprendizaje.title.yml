@@ -1,0 +1,18 @@
+uuid: 445dfad4-d6cf-4d9c-aa80-b91c69ddcad2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.matriz_resultados_de_aprendizaje
+id: node.matriz_resultados_de_aprendizaje.title
+field_name: title
+entity_type: node
+bundle: matriz_resultados_de_aprendizaje
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

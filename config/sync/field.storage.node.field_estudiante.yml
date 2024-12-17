@@ -1,0 +1,21 @@
+uuid: 3be6405d-ee64-4c62-95e9-9ae9537a6674
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_estudiante
+field_name: field_estudiante
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

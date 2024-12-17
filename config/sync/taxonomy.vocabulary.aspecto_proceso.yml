@@ -1,0 +1,9 @@
+uuid: fab7093d-3f0f-426a-bd45-5723da5039ef
+langcode: es
+status: true
+dependencies: {  }
+name: 'Aspecto - Proceso'
+vid: aspecto_proceso
+description: null
+weight: 0
+new_revision: false

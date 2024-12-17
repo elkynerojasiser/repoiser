@@ -1,0 +1,22 @@
+uuid: 37936c07-0d69-41c0-bf04-386a872db0f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.matriz_resultados_de_aprendizaje
+id: node.matriz_resultados_de_aprendizaje.promote
+field_name: promote
+entity_type: node
+bundle: matriz_resultados_de_aprendizaje
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

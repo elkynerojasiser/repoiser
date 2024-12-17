@@ -1,0 +1,11 @@
+uuid: 1ba3d45d-8850-4b0f-95d6-067847b235cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.plan_anual_programa
+id: node.plan_anual_programa
+target_entity_type_id: node
+target_bundle: plan_anual_programa
+default_langcode: site_default
+language_alterable: false

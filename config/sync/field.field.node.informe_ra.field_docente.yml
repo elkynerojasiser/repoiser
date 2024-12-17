@@ -1,0 +1,19 @@
+uuid: ee5897aa-046b-4d2f-89d5-80f8c2ce82c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_docente
+    - node.type.informe_ra
+id: node.informe_ra.field_docente
+field_name: field_docente
+entity_type: node
+bundle: informe_ra
+label: Docente
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

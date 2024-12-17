@@ -1,0 +1,24 @@
+uuid: 2a6ad15c-ea5d-458a-aa7d-407a30f2e93b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo
+field_name: field_tipo
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: aseguramiento_calidad
+      label: aseguramiento-calidad
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

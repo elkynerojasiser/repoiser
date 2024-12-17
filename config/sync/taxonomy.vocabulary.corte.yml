@@ -1,0 +1,9 @@
+uuid: 281c1c6d-8f6a-4077-bdf7-ab6a9021ace7
+langcode: es
+status: true
+dependencies: {  }
+name: Corte
+vid: corte
+description: null
+weight: 0
+new_revision: false

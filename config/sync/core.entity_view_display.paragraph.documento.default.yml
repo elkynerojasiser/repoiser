@@ -1,0 +1,42 @@
+uuid: 310853b4-5f1f-43e8-9b85-e1fe580a8c6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.documento.field_archivo_documento
+    - field.field.paragraph.documento.field_descripcion_documento
+    - field.field.paragraph.documento.field_metadatos
+    - field.field.paragraph.documento.field_nombre_documento
+    - paragraphs.paragraphs_type.documento
+  module:
+    - file
+id: paragraph.documento.default
+targetEntityType: paragraph
+bundle: documento
+mode: default
+content:
+  field_archivo_documento:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_descripcion_documento:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nombre_documento:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_metadatos: true

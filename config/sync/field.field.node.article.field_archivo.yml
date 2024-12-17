@@ -1,0 +1,27 @@
+uuid: 41c7020f-7ca2-48d7-bfb9-dfabf06b5032
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivo
+    - node.type.article
+  module:
+    - file
+id: node.article.field_archivo
+field_name: field_archivo
+entity_type: node
+bundle: article
+label: Archivo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

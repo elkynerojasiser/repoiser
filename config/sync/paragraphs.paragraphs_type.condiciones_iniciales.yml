@@ -1,0 +1,10 @@
+uuid: d29a6d8a-86f1-4e85-8a16-211ae491d088
+langcode: es
+status: true
+dependencies: {  }
+id: condiciones_iniciales
+label: 'Condiciones Iniciales'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,47 @@
+uuid: 394278da-c47e-4f90-9a52-2f0714637bca
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.informe_docente_asignatura.body
+    - field.field.node.informe_docente_asignatura.field_anexos_id
+    - field.field.node.informe_docente_asignatura.field_asignatura
+    - field.field.node.informe_docente_asignatura.field_aspecto_proceso
+    - field.field.node.informe_docente_asignatura.field_corte
+    - field.field.node.informe_docente_asignatura.field_docente
+    - field.field.node.informe_docente_asignatura.field_informe_docente
+    - field.field.node.informe_docente_asignatura.field_periodo
+    - field.field.node.informe_docente_asignatura.field_programa
+    - node.type.informe_docente_asignatura
+  module:
+    - text
+    - user
+id: node.informe_docente_asignatura.teaser
+targetEntityType: node
+bundle: informe_docente_asignatura
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_anexos_id: true
+  field_asignatura: true
+  field_aspecto_proceso: true
+  field_corte: true
+  field_docente: true
+  field_informe_docente: true
+  field_periodo: true
+  field_programa: true
+  langcode: true

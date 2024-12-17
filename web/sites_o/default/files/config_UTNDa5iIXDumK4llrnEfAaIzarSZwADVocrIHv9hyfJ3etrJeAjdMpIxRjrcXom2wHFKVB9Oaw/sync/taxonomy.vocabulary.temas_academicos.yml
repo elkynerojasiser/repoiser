@@ -1,0 +1,9 @@
+uuid: f17fe686-d48d-442c-a433-1d797b2b13b1
+langcode: es
+status: true
+dependencies: {  }
+name: Temas_académicos
+vid: temas_academicos
+description: 'Se basa en el comité curricular'
+weight: 0
+new_revision: false

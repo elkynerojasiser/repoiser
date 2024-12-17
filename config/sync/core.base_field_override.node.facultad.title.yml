@@ -1,0 +1,18 @@
+uuid: fda1c8b7-8a9a-4b72-983b-1a40c16219e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.facultad
+id: node.facultad.title
+field_name: title
+entity_type: node
+bundle: facultad
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

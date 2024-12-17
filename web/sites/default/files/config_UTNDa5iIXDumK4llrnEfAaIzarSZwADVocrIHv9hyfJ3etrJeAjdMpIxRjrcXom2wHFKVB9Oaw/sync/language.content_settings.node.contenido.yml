@@ -1,0 +1,11 @@
+uuid: b137777c-5ca4-408e-802d-1c351639d488
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido
+id: node.contenido
+target_entity_type_id: node
+target_bundle: contenido
+default_langcode: site_default
+language_alterable: false

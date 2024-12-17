@@ -1,0 +1,59 @@
+uuid: 0d9596e3-a37e-4626-88c1-a1b63c32d9f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.plan_estudios.field_anexos_pe
+    - field.field.node.plan_estudios.field_aspecto_proceso
+    - field.field.node.plan_estudios.field_documento_plan_estudios
+    - field.field.node.plan_estudios.field_programa
+    - node.type.plan_estudios
+  module:
+    - entity_reference_revisions
+    - user
+id: node.plan_estudios.default
+targetEntityType: node
+bundle: plan_estudios
+mode: default
+content:
+  field_anexos_pe:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_documento_plan_estudios:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

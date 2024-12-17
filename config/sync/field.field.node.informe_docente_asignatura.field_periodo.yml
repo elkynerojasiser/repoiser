@@ -1,0 +1,29 @@
+uuid: 1fa70fc6-3941-4b45-8da4-e9981c05b94f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periodo
+    - node.type.informe_docente_asignatura
+    - taxonomy.vocabulary.periodo_academico
+id: node.informe_docente_asignatura.field_periodo
+field_name: field_periodo
+entity_type: node
+bundle: informe_docente_asignatura
+label: 'Periodo Académico'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      periodo_academico: periodo_academico
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

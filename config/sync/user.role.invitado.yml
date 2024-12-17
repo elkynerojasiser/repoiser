@@ -1,0 +1,12 @@
+uuid: 3540248f-35a7-4449-978a-9d04aed4e7fe
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+id: invitado
+label: Invitado
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'

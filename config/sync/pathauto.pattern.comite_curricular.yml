@@ -1,0 +1,22 @@
+uuid: 947aaabc-b544-4470-9602-9699f4b51ebb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: comite_curricular
+label: 'Comité Curricular'
+type: 'canonical_entities:node'
+pattern: '/gestion-academica/comite-curricular/[node:title]'
+selection_criteria:
+  b52e2d6a-460b-4a49-a4e1-0c87ec239964:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b52e2d6a-460b-4a49-a4e1-0c87ec239964
+    context_mapping:
+      node: node
+    bundles:
+      comite_curricular: comite_curricular
+selection_logic: and
+weight: -5
+relationships: {  }

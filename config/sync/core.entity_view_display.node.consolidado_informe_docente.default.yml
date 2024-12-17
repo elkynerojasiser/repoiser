@@ -1,0 +1,86 @@
+uuid: 11288adb-21e6-4935-bd2c-c13d478f4180
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.consolidado_informe_docente.body
+    - field.field.node.consolidado_informe_docente.field_anexos_cid
+    - field.field.node.consolidado_informe_docente.field_aspecto_proceso
+    - field.field.node.consolidado_informe_docente.field_consolidado_id
+    - field.field.node.consolidado_informe_docente.field_corte
+    - field.field.node.consolidado_informe_docente.field_periodo
+    - field.field.node.consolidado_informe_docente.field_programa
+    - node.type.consolidado_informe_docente
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.consolidado_informe_docente.default
+targetEntityType: node
+bundle: consolidado_informe_docente
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_anexos_cid:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_consolidado_id:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_corte:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_periodo:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

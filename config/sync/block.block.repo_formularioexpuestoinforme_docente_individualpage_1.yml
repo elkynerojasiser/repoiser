@@ -1,0 +1,28 @@
+uuid: c65cf8d9-6e44-4691-8410-53a16aaf685e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.informe_docente_individual
+  module:
+    - system
+    - views
+  theme:
+    - repo
+id: repo_formularioexpuestoinforme_docente_individualpage_1
+theme: repo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:informe_docente_individual-page_1'
+settings:
+  id: 'views_exposed_filter_block:informe_docente_individual-page_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: 'Filtrar por'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /gestion-academica/informe-docente/informe-docente-individual

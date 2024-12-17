@@ -1,0 +1,9 @@
+uuid: e3aaf52b-1459-4bbd-b2dc-e2f8e7922ce8
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Asignatura'
+vid: tipo_de_asignatura
+description: null
+weight: 0
+new_revision: false

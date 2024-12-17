@@ -1,0 +1,11 @@
+uuid: 0e50591c-6302-474f-b3e9-0277363c2a7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.autoevaluacion
+id: node.autoevaluacion
+target_entity_type_id: node
+target_bundle: autoevaluacion
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,40 @@
+uuid: a7553052-49c1-4ea0-80f1-9f2bbd22db0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anexos_id
+    - node.type.informe_docente_asignatura
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: node.informe_docente_asignatura.field_anexos_id
+field_name: field_anexos_id
+entity_type: node
+bundle: informe_docente_asignatura
+label: Anexos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: false
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: true
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

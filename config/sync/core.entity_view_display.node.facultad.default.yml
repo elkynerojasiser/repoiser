@@ -1,0 +1,29 @@
+uuid: 8a642a50-d3dc-496f-8e24-02edf0764627
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.facultad.body
+    - node.type.facultad
+  module:
+    - text
+    - user
+id: node.facultad.default
+targetEntityType: node
+bundle: facultad
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

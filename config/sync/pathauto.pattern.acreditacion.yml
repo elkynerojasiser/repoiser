@@ -1,0 +1,22 @@
+uuid: ccb8b253-c27c-45d9-b0a3-38134d81037d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: acreditacion
+label: Acreditación
+type: 'canonical_entities:node'
+pattern: '/aseguramiento-de-la-calidad/acreditacion/[node:title]'
+selection_criteria:
+  01af3254-7445-4fcc-afce-724013b22938:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 01af3254-7445-4fcc-afce-724013b22938
+    context_mapping:
+      node: node
+    bundles:
+      acreditacion: acreditacion
+selection_logic: and
+weight: -5
+relationships: {  }

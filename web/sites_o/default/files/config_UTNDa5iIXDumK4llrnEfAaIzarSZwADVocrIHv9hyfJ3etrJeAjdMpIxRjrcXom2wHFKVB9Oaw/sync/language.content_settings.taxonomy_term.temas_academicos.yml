@@ -1,0 +1,11 @@
+uuid: 510fe53d-4614-4e25-9919-a2e7267b48b7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.temas_academicos
+id: taxonomy_term.temas_academicos
+target_entity_type_id: taxonomy_term
+target_bundle: temas_academicos
+default_langcode: site_default
+language_alterable: true

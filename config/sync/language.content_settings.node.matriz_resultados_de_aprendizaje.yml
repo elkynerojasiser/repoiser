@@ -1,0 +1,11 @@
+uuid: 283ceb74-0455-47b2-bf4a-946ab84a634c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.matriz_resultados_de_aprendizaje
+id: node.matriz_resultados_de_aprendizaje
+target_entity_type_id: node
+target_bundle: matriz_resultados_de_aprendizaje
+default_langcode: site_default
+language_alterable: false

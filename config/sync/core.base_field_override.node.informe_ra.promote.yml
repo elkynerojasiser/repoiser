@@ -1,0 +1,22 @@
+uuid: 88ef3d30-2846-4a7d-a841-74678481827e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informe_ra
+id: node.informe_ra.promote
+field_name: promote
+entity_type: node
+bundle: informe_ra
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

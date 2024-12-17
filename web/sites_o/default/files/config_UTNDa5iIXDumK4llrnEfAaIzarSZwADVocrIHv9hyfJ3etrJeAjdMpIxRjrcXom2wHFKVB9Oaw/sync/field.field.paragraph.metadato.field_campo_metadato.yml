@@ -1,0 +1,29 @@
+uuid: a15a611a-5be5-4274-95ed-f4b8a65ca188
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_campo_metadato
+    - paragraphs.paragraphs_type.metadato
+    - taxonomy.vocabulary.metadatos
+id: paragraph.metadato.field_campo_metadato
+field_name: field_campo_metadato
+entity_type: paragraph
+bundle: metadato
+label: 'Campo metadato'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      metadatos: metadatos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,43 @@
+uuid: 13b678ba-de3b-4da4-abaf-e7cf536c2e58
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.consolidado_informe_docente.body
+    - field.field.node.consolidado_informe_docente.field_anexos_cid
+    - field.field.node.consolidado_informe_docente.field_aspecto_proceso
+    - field.field.node.consolidado_informe_docente.field_consolidado_id
+    - field.field.node.consolidado_informe_docente.field_corte
+    - field.field.node.consolidado_informe_docente.field_periodo
+    - field.field.node.consolidado_informe_docente.field_programa
+    - node.type.consolidado_informe_docente
+  module:
+    - text
+    - user
+id: node.consolidado_informe_docente.teaser
+targetEntityType: node
+bundle: consolidado_informe_docente
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_anexos_cid: true
+  field_aspecto_proceso: true
+  field_consolidado_id: true
+  field_corte: true
+  field_periodo: true
+  field_programa: true
+  langcode: true

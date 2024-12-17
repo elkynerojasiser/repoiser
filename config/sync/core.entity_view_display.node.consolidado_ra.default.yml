@@ -1,0 +1,76 @@
+uuid: e81a298a-ea0f-4bd3-aae8-8cfff3fc5c07
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.consolidado_ra.field_aspecto_proceso
+    - field.field.node.consolidado_ra.field_consolidado_ra
+    - field.field.node.consolidado_ra.field_corte
+    - field.field.node.consolidado_ra.field_periodo
+    - field.field.node.consolidado_ra.field_plan_estudios
+    - field.field.node.consolidado_ra.field_programa
+    - node.type.consolidado_ra
+  module:
+    - entity_reference_revisions
+    - user
+id: node.consolidado_ra.default
+targetEntityType: node
+bundle: consolidado_ra
+mode: default
+content:
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_consolidado_ra:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_corte:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_periodo:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_plan_estudios:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

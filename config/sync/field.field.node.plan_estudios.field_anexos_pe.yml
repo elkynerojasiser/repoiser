@@ -1,0 +1,40 @@
+uuid: ddd2ca15-c2e8-4d4f-84ce-043616206f52
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anexos_pe
+    - node.type.plan_estudios
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: node.plan_estudios.field_anexos_pe
+field_name: field_anexos_pe
+entity_type: node
+bundle: plan_estudios
+label: Anexos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: false
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: true
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

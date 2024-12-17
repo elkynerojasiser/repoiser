@@ -1,0 +1,29 @@
+uuid: c10ea3f2-d421-406d-82e8-aa830f8545e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_semestre
+    - node.type.contenidos_programaticos
+    - taxonomy.vocabulary.semestre
+id: node.contenidos_programaticos.field_semestre
+field_name: field_semestre
+entity_type: node
+bundle: contenidos_programaticos
+label: Semestre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      semestre: semestre
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 05c93d84-8819-4784-9297-44cc713f76bd
+langcode: es
+status: true
+dependencies: {  }
+id: documento
+label: Documento
+icon_uuid: null
+icon_default: null
+description: 'Representa la entidad de un documento publicado en el repositorio'
+behavior_plugins: {  }

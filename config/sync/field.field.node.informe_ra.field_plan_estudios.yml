@@ -1,0 +1,29 @@
+uuid: 96da7262-ea45-490b-9137-a2e7cc38c1c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plan_estudios
+    - node.type.informe_ra
+    - node.type.plan_estudios
+id: node.informe_ra.field_plan_estudios
+field_name: field_plan_estudios
+entity_type: node
+bundle: informe_ra
+label: 'Plan de estudios'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      plan_estudios: plan_estudios
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

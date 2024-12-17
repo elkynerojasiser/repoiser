@@ -1,0 +1,55 @@
+uuid: 278fa9f8-ba22-4232-a540-19b50ec8f403
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.acreditacion.field_actas_acreditacion
+    - field.field.node.acreditacion.field_aspecto_proceso
+    - field.field.node.acreditacion.field_condiciones_iniciales
+    - field.field.node.acreditacion.field_cuadros_maestros
+    - field.field.node.acreditacion.field_programa
+    - node.type.acreditacion
+  module:
+    - entity_reference_revisions
+    - user
+id: node.acreditacion.default
+targetEntityType: node
+bundle: acreditacion
+mode: default
+content:
+  field_actas_acreditacion:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_condiciones_iniciales:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cuadros_maestros:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_aspecto_proceso: true
+  field_programa: true
+  langcode: true

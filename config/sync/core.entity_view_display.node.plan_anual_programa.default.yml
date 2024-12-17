@@ -1,0 +1,68 @@
+uuid: 96afb667-f693-4159-9b44-514a9d804924
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.plan_anual_programa.field_anexos_pap
+    - field.field.node.plan_anual_programa.field_ano
+    - field.field.node.plan_anual_programa.field_aspecto_proceso
+    - field.field.node.plan_anual_programa.field_documento_plan_anual
+    - field.field.node.plan_anual_programa.field_programa
+    - node.type.plan_anual_programa
+  module:
+    - entity_reference_revisions
+    - user
+id: node.plan_anual_programa.default
+targetEntityType: node
+bundle: plan_anual_programa
+mode: default
+content:
+  field_anexos_pap:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_ano:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_documento_plan_anual:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

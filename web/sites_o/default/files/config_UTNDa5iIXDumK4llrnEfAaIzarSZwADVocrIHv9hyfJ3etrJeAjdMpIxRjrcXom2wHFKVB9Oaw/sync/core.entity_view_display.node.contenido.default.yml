@@ -1,0 +1,152 @@
+uuid: 50428ed4-63fe-48a5-817f-f5fa9fd7d11d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenido.field_archivos
+    - field.field.node.contenido.field_codigo
+    - field.field.node.contenido.field_componente
+    - field.field.node.contenido.field_fecha_contenido
+    - field.field.node.contenido.field_imagen_portada_contenido
+    - field.field.node.contenido.field_metadatos
+    - field.field.node.contenido.field_programa_contenido
+    - field.field.node.contenido.field_resumen_contenido
+    - field.field.node.contenido.field_semestre
+    - field.field.node.contenido.field_tipo_de_curso
+    - field.field.node.contenido.field_uri_contenido
+    - field.field.node.contenido.field_validacion_comite
+    - field.field.node.contenido.field_version_del_plan_de_estudi
+    - node.type.contenido
+  module:
+    - datetime
+    - entity_reference_revisions
+    - file
+    - image
+    - link
+    - user
+id: node.contenido.default
+targetEntityType: node
+bundle: contenido
+mode: default
+content:
+  field_archivos:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_codigo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_componente:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_fecha_contenido:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_imagen_portada_contenido:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_metadatos:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 119
+    region: content
+  field_programa_contenido:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_resumen_contenido:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 121
+    region: content
+  field_semestre:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 122
+    region: content
+  field_tipo_de_curso:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 123
+    region: content
+  field_uri_contenido:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 124
+    region: content
+  field_validacion_comite:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 125
+    region: content
+  field_version_del_plan_de_estudi:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 126
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

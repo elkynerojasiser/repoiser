@@ -1,0 +1,19 @@
+uuid: 8d3ddb02-3e95-4464-b08e-febeb04f39b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugar_de_publicacion
+    - node.type.article
+id: node.article.field_lugar_de_publicacion
+field_name: field_lugar_de_publicacion
+entity_type: node
+bundle: article
+label: 'Lugar de publicación'
+description: 'Inserte el lugar donde publicó este artículo'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

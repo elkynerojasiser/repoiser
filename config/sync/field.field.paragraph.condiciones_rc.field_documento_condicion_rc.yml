@@ -1,0 +1,37 @@
+uuid: 914d6a44-63cb-4512-b3a6-d07ba9e64a29
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_documento_condicion_rc
+    - paragraphs.paragraphs_type.condiciones_rc
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: paragraph.condiciones_rc.field_documento_condicion_rc
+field_name: field_documento_condicion_rc
+entity_type: paragraph
+bundle: condiciones_rc
+label: 'Documento de Condición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_rc:
+        weight: 4
+        enabled: false
+      documento:
+        weight: 5
+        enabled: true
+      metadato:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

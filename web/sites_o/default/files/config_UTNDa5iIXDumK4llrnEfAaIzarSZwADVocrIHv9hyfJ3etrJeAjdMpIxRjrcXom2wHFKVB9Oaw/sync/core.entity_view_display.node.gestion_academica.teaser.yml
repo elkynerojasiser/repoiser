@@ -1,0 +1,41 @@
+uuid: 29df5342-de4a-46a9-b8d2-a5dc907d7e98
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gestion_academica.field_acta_resumen
+    - field.field.node.gestion_academica.field_asistencia
+    - field.field.node.gestion_academica.field_citacion
+    - field.field.node.gestion_academica.field_comite_curricular
+    - field.field.node.gestion_academica.field_consolidado
+    - field.field.node.gestion_academica.field_correspondencia
+    - field.field.node.gestion_academica.field_informes_academicos
+    - field.field.node.gestion_academica.field_informes_profesores
+    - field.field.node.gestion_academica.field_periodo
+    - field.field.node.gestion_academica.field_plan_anual_del_programa
+    - node.type.gestion_academica
+  module:
+    - user
+id: node.gestion_academica.teaser
+targetEntityType: node
+bundle: gestion_academica
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_acta_resumen: true
+  field_asistencia: true
+  field_citacion: true
+  field_comite_curricular: true
+  field_consolidado: true
+  field_correspondencia: true
+  field_informes_academicos: true
+  field_informes_profesores: true
+  field_periodo: true
+  field_plan_anual_del_programa: true
+  langcode: true

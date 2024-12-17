@@ -1,0 +1,21 @@
+uuid: a420dd49-e834-4aea-b8e0-78cb9e76a05d
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_documento_autoevaluacion
+field_name: field_documento_autoevaluacion
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

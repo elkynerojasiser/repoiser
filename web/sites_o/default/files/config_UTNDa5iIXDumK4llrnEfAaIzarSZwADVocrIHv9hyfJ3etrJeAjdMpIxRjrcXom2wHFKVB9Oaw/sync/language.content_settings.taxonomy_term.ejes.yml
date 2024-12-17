@@ -1,0 +1,11 @@
+uuid: 5284eb10-685b-4064-b8c0-16cef436ca13
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ejes
+id: taxonomy_term.ejes
+target_entity_type_id: taxonomy_term
+target_bundle: ejes
+default_langcode: site_default
+language_alterable: true

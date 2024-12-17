@@ -1,0 +1,23 @@
+uuid: 150cdd40-161c-4438-9d01-6e4f9f43eaae
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_cuadros_maestros
+field_name: field_cuadros_maestros
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

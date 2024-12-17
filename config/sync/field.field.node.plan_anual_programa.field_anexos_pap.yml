@@ -1,0 +1,40 @@
+uuid: 9f25f5f1-fd04-4a20-b7ba-270f4952b8eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anexos_pap
+    - node.type.plan_anual_programa
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: node.plan_anual_programa.field_anexos_pap
+field_name: field_anexos_pap
+entity_type: node
+bundle: plan_anual_programa
+label: Anexos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: false
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: true
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

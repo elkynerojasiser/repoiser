@@ -1,0 +1,11 @@
+uuid: cdc70306-a391-4b0c-82ea-0fa550214ad5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.semestre
+id: taxonomy_term.semestre
+target_entity_type_id: taxonomy_term
+target_bundle: semestre
+default_langcode: site_default
+language_alterable: false

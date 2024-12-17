@@ -1,0 +1,59 @@
+uuid: c68b9881-9d71-4c32-bf84-0eef73564b1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.autoevaluacion.field_anexos
+    - field.field.node.autoevaluacion.field_aspecto_proceso
+    - field.field.node.autoevaluacion.field_documento_autoevaluacion
+    - field.field.node.autoevaluacion.field_programa
+    - node.type.autoevaluacion
+  module:
+    - entity_reference_revisions
+    - user
+id: node.autoevaluacion.default
+targetEntityType: node
+bundle: autoevaluacion
+mode: default
+content:
+  field_anexos:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_documento_autoevaluacion:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

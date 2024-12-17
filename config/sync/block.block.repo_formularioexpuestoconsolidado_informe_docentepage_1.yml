@@ -1,0 +1,28 @@
+uuid: f029233d-c749-4822-8bf5-9c464c99c906
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.consolidado_informe_docente
+  module:
+    - system
+    - views
+  theme:
+    - repo
+id: repo_formularioexpuestoconsolidado_informe_docentepage_1
+theme: repo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:consolidado_informe_docente-page_1'
+settings:
+  id: 'views_exposed_filter_block:consolidado_informe_docente-page_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: 'Filtrar por'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /gestion-academica/informe-docente/informe-docente-consolidado

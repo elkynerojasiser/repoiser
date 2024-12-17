@@ -1,0 +1,22 @@
+uuid: 54439232-8bb2-4a7c-ad44-86287a30e62b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.facultad
+id: node.facultad.promote
+field_name: promote
+entity_type: node
+bundle: facultad
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

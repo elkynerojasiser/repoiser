@@ -1,0 +1,31 @@
+uuid: ef09a347-1656-4a84-8f76-4e6b6ba624bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metadatos
+    - node.type.contenido
+    - paragraphs.paragraphs_type.metadato
+  module:
+    - entity_reference_revisions
+id: node.contenido.field_metadatos
+field_name: field_metadatos
+entity_type: node
+bundle: contenido
+label: Metadatos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      metadato: metadato
+    negate: 0
+    target_bundles_drag_drop:
+      metadato:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

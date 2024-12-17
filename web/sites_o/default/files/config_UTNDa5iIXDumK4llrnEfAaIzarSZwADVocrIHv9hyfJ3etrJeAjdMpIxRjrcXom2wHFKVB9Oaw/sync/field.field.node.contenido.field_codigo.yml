@@ -1,0 +1,19 @@
+uuid: b700e2cb-5a25-49be-9ebb-31596ef5015c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo
+    - node.type.contenido
+id: node.contenido.field_codigo
+field_name: field_codigo
+entity_type: node
+bundle: contenido
+label: Código
+description: 'Ingrese el código de la asignatura'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

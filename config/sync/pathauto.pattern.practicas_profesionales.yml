@@ -1,0 +1,22 @@
+uuid: ffc4b43b-f1af-4a9d-8f25-6688b1c61ad6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: practicas_profesionales
+label: 'Prácticas profesionales'
+type: 'canonical_entities:node'
+pattern: '/practicas-profesionales/[node:title]'
+selection_criteria:
+  e20c9509-f2f3-4e56-9810-25d6a08a8371:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e20c9509-f2f3-4e56-9810-25d6a08a8371
+    context_mapping:
+      node: node
+    bundles:
+      practicas_profesionales: practicas_profesionales
+selection_logic: and
+weight: -5
+relationships: {  }

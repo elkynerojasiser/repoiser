@@ -1,0 +1,104 @@
+uuid: 13cfd67f-1950-4a93-9625-148ffe2e8ceb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.informe_docente_asignatura.body
+    - field.field.node.informe_docente_asignatura.field_anexos_id
+    - field.field.node.informe_docente_asignatura.field_asignatura
+    - field.field.node.informe_docente_asignatura.field_aspecto_proceso
+    - field.field.node.informe_docente_asignatura.field_corte
+    - field.field.node.informe_docente_asignatura.field_docente
+    - field.field.node.informe_docente_asignatura.field_informe_docente
+    - field.field.node.informe_docente_asignatura.field_periodo
+    - field.field.node.informe_docente_asignatura.field_programa
+    - node.type.informe_docente_asignatura
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.informe_docente_asignatura.default
+targetEntityType: node
+bundle: informe_docente_asignatura
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_anexos_id:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_asignatura:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_corte:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_docente:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_informe_docente:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_periodo:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

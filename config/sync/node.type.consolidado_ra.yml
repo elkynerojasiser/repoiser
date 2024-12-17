@@ -1,0 +1,17 @@
+uuid: 74a30d9a-ce47-433d-9f2c-c26ecc14fae3
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Consolidado Resultados de Aprendizaje'
+type: consolidado_ra
+description: null
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

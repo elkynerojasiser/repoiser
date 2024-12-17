@@ -1,0 +1,23 @@
+uuid: 4fbb9a13-9d61-45e8-8dba-52d936a79cd6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ano_de_creacion
+    - node.type.article
+id: node.article.field_ano_de_creacion
+field_name: field_ano_de_creacion
+entity_type: node
+bundle: article
+label: 'Año de creación'
+description: 'Por favor, reafirme el año en el que se está publicando este producto académico'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: 9999
+  prefix: ''
+  suffix: ''
+field_type: integer

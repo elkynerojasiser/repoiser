@@ -1,0 +1,22 @@
+uuid: 049a8f8a-09b9-45d8-aaa4-81c747b0014b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: informe_docente_individual
+label: 'Informe Docente Individual'
+type: 'canonical_entities:node'
+pattern: '/gestion-academica/informe-docente/informe-docente-individual/[node:title]'
+selection_criteria:
+  8399bdb9-154e-4776-8261-506c928240f8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8399bdb9-154e-4776-8261-506c928240f8
+    context_mapping:
+      node: node
+    bundles:
+      informe_docente_asignatura: informe_docente_asignatura
+selection_logic: and
+weight: -5
+relationships: {  }

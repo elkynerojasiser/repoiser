@@ -1,0 +1,29 @@
+uuid: 8c0f9f15-7f45-44db-8d32-64234a2062fd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_condiciones
+    - node.type.acreditacion
+    - taxonomy.vocabulary.condiciones
+id: node.acreditacion.field_condiciones
+field_name: field_condiciones
+entity_type: node
+bundle: acreditacion
+label: Condiciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      condiciones: condiciones
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,59 @@
+uuid: 7acd61e2-2ac3-4804-b44a-018309c6bbf8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.planes_mejoramiento.field_aspecto_proceso
+    - field.field.node.planes_mejoramiento.field_documento_pm
+    - field.field.node.planes_mejoramiento.field_programa
+    - field.field.node.planes_mejoramiento.field_seguimientos
+    - node.type.planes_mejoramiento
+  module:
+    - entity_reference_revisions
+    - user
+id: node.planes_mejoramiento.default
+targetEntityType: node
+bundle: planes_mejoramiento
+mode: default
+content:
+  field_aspecto_proceso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_documento_pm:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_programa:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_seguimientos:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

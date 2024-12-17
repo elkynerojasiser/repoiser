@@ -1,0 +1,17 @@
+uuid: 9e483621-855d-45db-bd90-660055244860
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Planes de Mejoramiento'
+type: planes_mejoramiento
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

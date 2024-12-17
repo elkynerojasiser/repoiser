@@ -1,0 +1,18 @@
+uuid: 305a604b-fae7-4d62-a585-ed377a7f5af4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.planes_mejoramiento
+id: node.planes_mejoramiento.title
+field_name: title
+entity_type: node
+bundle: planes_mejoramiento
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

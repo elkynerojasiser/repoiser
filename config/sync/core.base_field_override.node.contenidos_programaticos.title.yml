@@ -1,0 +1,18 @@
+uuid: 272ade50-7a30-4dce-ad0d-7ebaef74f281
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenidos_programaticos
+id: node.contenidos_programaticos.title
+field_name: title
+entity_type: node
+bundle: contenidos_programaticos
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: a841b311-c390-4242-bfbd-a09b2b2d5163
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informe_final_practica
+    - node.type.practicas_profesionales
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: node.practicas_profesionales.field_informe_final_practica
+field_name: field_informe_final_practica
+entity_type: node
+bundle: practicas_profesionales
+label: 'Informe Final Práctica'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      documento: documento
+    negate: 0
+    target_bundles_drag_drop:
+      condiciones_iniciales:
+        weight: 5
+        enabled: false
+      condiciones_rc:
+        weight: 6
+        enabled: false
+      documento:
+        weight: 7
+        enabled: true
+      metadato:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

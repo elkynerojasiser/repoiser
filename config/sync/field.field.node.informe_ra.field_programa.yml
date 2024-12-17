@@ -1,0 +1,29 @@
+uuid: 938b9930-aad1-46db-8759-8f34720f1b20
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programa
+    - node.type.informe_ra
+    - node.type.programa
+id: node.informe_ra.field_programa
+field_name: field_programa
+entity_type: node
+bundle: informe_ra
+label: Programa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      programa: programa
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

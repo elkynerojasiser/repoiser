@@ -1,0 +1,22 @@
+uuid: ac7c073f-6f41-4cf6-9cb6-606312e639d9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: plan_de_estudios
+label: 'Plan de estudios'
+type: 'canonical_entities:node'
+pattern: '/plan-de-estudios/[node:title]'
+selection_criteria:
+  5e86f9bc-820e-4505-bd17-a4395c5a63c1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5e86f9bc-820e-4505-bd17-a4395c5a63c1
+    context_mapping:
+      node: node
+    bundles:
+      plan_estudios: plan_estudios
+selection_logic: and
+weight: -5
+relationships: {  }

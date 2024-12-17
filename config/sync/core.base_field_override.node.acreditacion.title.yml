@@ -1,0 +1,18 @@
+uuid: 2283553a-75a7-4765-8941-a2b43eaa9240
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.acreditacion
+id: node.acreditacion.title
+field_name: title
+entity_type: node
+bundle: acreditacion
+label: Versión
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

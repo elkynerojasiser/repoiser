@@ -1,0 +1,11 @@
+uuid: 0a57353e-cc66-4e38-a535-eb4ae6ee0049
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_asignatura
+id: taxonomy_term.tipo_de_asignatura
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_asignatura
+default_langcode: site_default
+language_alterable: false

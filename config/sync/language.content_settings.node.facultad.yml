@@ -1,0 +1,11 @@
+uuid: 162c3b20-9504-47aa-b495-dd6e31fa0b96
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.facultad
+id: node.facultad
+target_entity_type_id: node
+target_bundle: facultad
+default_langcode: site_default
+language_alterable: false

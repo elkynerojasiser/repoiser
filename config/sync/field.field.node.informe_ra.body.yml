@@ -1,0 +1,24 @@
+uuid: c062b5ec-644e-4afc-9ab9-69d5063e33e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.informe_ra
+  module:
+    - text
+id: node.informe_ra.body
+field_name: body
+entity_type: node
+bundle: informe_ra
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

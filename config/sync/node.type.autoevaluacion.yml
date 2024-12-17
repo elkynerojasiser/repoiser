@@ -1,0 +1,17 @@
+uuid: 73dfedf5-63de-4cee-9fa8-45b33d86a105
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Autoevaluación
+type: autoevaluacion
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,19 @@
+uuid: 8b6a1c95-c8e9-4cb7-a217-ee1f16f8ebf1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_empresa_entidad
+    - node.type.practicas_profesionales
+id: node.practicas_profesionales.field_empresa_entidad
+field_name: field_empresa_entidad
+entity_type: node
+bundle: practicas_profesionales
+label: 'Empresa - Entidad'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

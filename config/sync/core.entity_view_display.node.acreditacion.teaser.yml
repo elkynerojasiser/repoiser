@@ -1,0 +1,31 @@
+uuid: 6e20f9e3-5c70-4ad7-b05c-3edee3482ce3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.acreditacion.field_actas_acreditacion
+    - field.field.node.acreditacion.field_aspecto_proceso
+    - field.field.node.acreditacion.field_condiciones_iniciales
+    - field.field.node.acreditacion.field_cuadros_maestros
+    - field.field.node.acreditacion.field_programa
+    - node.type.acreditacion
+  module:
+    - user
+id: node.acreditacion.teaser
+targetEntityType: node
+bundle: acreditacion
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_actas_acreditacion: true
+  field_aspecto_proceso: true
+  field_condiciones_iniciales: true
+  field_cuadros_maestros: true
+  field_programa: true
+  langcode: true
