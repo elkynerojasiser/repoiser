@@ -2,10 +2,7 @@ uuid: 8d13b151-fed6-4ac0-b347-fee39bad347d
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:2a22becc-bc1e-4d85-b235-62f6f6e35aa4'
   module:
-    - block_content
     - system
   theme:
     - repo

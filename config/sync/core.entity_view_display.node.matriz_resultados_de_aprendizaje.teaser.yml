@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.matriz_resultados_de_aprendizaje.field_aspecto_proceso
     - field.field.node.matriz_resultados_de_aprendizaje.field_documento_matriz_ra
+    - field.field.node.matriz_resultados_de_aprendizaje.field_plan_estudios
     - field.field.node.matriz_resultados_de_aprendizaje.field_programa
     - node.type.matriz_resultados_de_aprendizaje
   module:
@@ -23,5 +24,6 @@ content:
 hidden:
   field_aspecto_proceso: true
   field_documento_matriz_ra: true
+  field_plan_estudios: true
   field_programa: true
   langcode: true

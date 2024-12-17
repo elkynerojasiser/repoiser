@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.informe_ra.field_docente
     - field.field.node.informe_ra.field_documento_informe_ra
     - field.field.node.informe_ra.field_periodo
+    - field.field.node.informe_ra.field_plan_estudios
     - field.field.node.informe_ra.field_programa
     - node.type.informe_ra
   module:
@@ -41,5 +42,6 @@ hidden:
   field_docente: true
   field_documento_informe_ra: true
   field_periodo: true
+  field_plan_estudios: true
   field_programa: true
   langcode: true

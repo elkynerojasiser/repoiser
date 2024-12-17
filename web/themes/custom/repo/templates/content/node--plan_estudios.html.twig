@@ -1,0 +1,14 @@
+{# node--practicas.html.twig #}
+
+<div class="container custom-formacion">
+    <article {{attributes.addClass('node','node--type-practicas','clearfix')}}>
+      <div class="content-wrapper">
+        <h1>{{ title }}</h1>
+      </div>
+      <ul>
+        <li><a href="/contenidos-programaticos/{{ node.id }}">Contenidos Programáticos</a></li>
+        <li><a href="/resultados-de-aprendizaje/{{ node.id }}">Resultados de Aprendizaje</a></li>
+        <li><a href="/practicas-profesionales">Prácticas Profesionales</a></li>
+      </ul>
+    </article>
+  </div>

@@ -2,10 +2,6 @@ uuid: 84a8b2fa-7a5a-4ada-967d-6c5058c66fb4
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:27137fe4-a642-4540-88ab-6b8e1bc9acbb'
-  module:
-    - block_content
   theme:
     - repo
 id: repo_encabezado

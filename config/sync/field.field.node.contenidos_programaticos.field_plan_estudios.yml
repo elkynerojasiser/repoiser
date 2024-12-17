@@ -1,0 +1,29 @@
+uuid: a9782f32-89cc-429f-baa8-e67253342bf7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plan_estudios
+    - node.type.contenidos_programaticos
+    - node.type.plan_estudios
+id: node.contenidos_programaticos.field_plan_estudios
+field_name: field_plan_estudios
+entity_type: node
+bundle: contenidos_programaticos
+label: 'Plan de estudios'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      plan_estudios: plan_estudios
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

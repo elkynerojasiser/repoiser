@@ -1,49 +1,66 @@
-@import url(animate.css);
+@import 'animate.css';
 .encabezado {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; }
-  .encabezado .logo-iser-img {
-    width: 600px; }
-  .encabezado .logo-divisor-img {
-    height: 200px;
-    width: 20px; }
-  .encabezado .logo-repo-img {
-    height: 250px;
-    width: 400px; }
+  width: 100%;
+}
+.encabezado .logo-iser-img {
+  width: 600px;
+}
+.encabezado .logo-divisor-img {
+  height: 200px;
+  width: 20px;
+}
+.encabezado .logo-repo-img {
+  height: 250px;
+  width: 400px;
+}
 
 .menu-principal-repo {
-  display: block; }
+  display: block;
+}
 
 .primary-menu-repo {
-  background-color: #1B9E88; }
-  .primary-menu-repo ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    .primary-menu-repo ul li a {
-      color: #ffffff; }
+  background-color: #1B9E88;
+}
+.primary-menu-repo ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.primary-menu-repo ul li a {
+  color: #ffffff;
+}
 
 .card_dashboard {
   height: 220px;
   min-height: 220px;
-  max-height: 220px; }
-  .card_dashboard__icon {
-    width: 100px;
-    height: 100px; }
+  max-height: 220px;
+}
+.card_dashboard__icon {
+  width: 100px;
+  height: 100px;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Arial", sans-serif;
-  color: #333; }
+  color: #333;
+}
 
 header, nav, main, footer {
-  padding: 10px; }
+  padding: 10px;
+}
+
+#views-exposed-form-contenidos-programaticos-page-1 div {
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=style.css.map */

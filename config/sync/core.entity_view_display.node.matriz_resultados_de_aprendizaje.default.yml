@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.matriz_resultados_de_aprendizaje.field_aspecto_proceso
     - field.field.node.matriz_resultados_de_aprendizaje.field_documento_matriz_ra
+    - field.field.node.matriz_resultados_de_aprendizaje.field_plan_estudios
     - field.field.node.matriz_resultados_de_aprendizaje.field_programa
     - node.type.matriz_resultados_de_aprendizaje
   module:
@@ -15,14 +16,6 @@ targetEntityType: node
 bundle: matriz_resultados_de_aprendizaje
 mode: default
 content:
-  field_aspecto_proceso:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 105
-    region: content
   field_documento_matriz_ra:
     type: entity_reference_revisions_entity_view
     label: above
@@ -30,7 +23,15 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 102
+    weight: 3
+    region: content
+  field_plan_estudios:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_programa:
     type: entity_reference_label
@@ -38,12 +39,13 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 104
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  field_aspecto_proceso: true
   langcode: true

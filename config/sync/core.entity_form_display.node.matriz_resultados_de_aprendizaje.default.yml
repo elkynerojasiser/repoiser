@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.matriz_resultados_de_aprendizaje.field_aspecto_proceso
     - field.field.node.matriz_resultados_de_aprendizaje.field_documento_matriz_ra
+    - field.field.node.matriz_resultados_de_aprendizaje.field_plan_estudios
     - field.field.node.matriz_resultados_de_aprendizaje.field_programa
     - node.type.matriz_resultados_de_aprendizaje
   module:
@@ -17,13 +18,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_documento_matriz_ra:
     type: paragraphs
-    weight: 9
+    weight: 10
     region: content
     settings:
       title: Párrafo
@@ -39,6 +40,12 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_plan_estudios:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_programa:
     type: options_select
     weight: 1
@@ -47,34 +54,34 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 5
+    weight: 6
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 6
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -89,7 +96,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS

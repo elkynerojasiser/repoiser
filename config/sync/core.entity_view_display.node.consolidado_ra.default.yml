@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.consolidado_ra.field_consolidado_ra
     - field.field.node.consolidado_ra.field_corte
     - field.field.node.consolidado_ra.field_periodo
+    - field.field.node.consolidado_ra.field_plan_estudios
     - field.field.node.consolidado_ra.field_programa
     - node.type.consolidado_ra
   module:
@@ -49,6 +50,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 106
+    region: content
+  field_plan_estudios:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
     region: content
   field_programa:
     type: entity_reference_label

@@ -1,0 +1,28 @@
+uuid: bba9eecd-40fb-4a99-9389-ecc0a1b99916
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.plan_anual_programa
+  module:
+    - system
+    - views
+  theme:
+    - repo
+id: repo_formularioexpuestoplan_anual_programapage_1
+theme: repo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:plan_anual_programa-page_1'
+settings:
+  id: 'views_exposed_filter_block:plan_anual_programa-page_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: 'Filtrar por'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /plan-anual-del-programa

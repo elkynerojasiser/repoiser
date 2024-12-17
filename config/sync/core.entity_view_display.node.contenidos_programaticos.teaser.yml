@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.contenidos_programaticos.field_aspecto_proceso
     - field.field.node.contenidos_programaticos.field_documento_contenido
     - field.field.node.contenidos_programaticos.field_periodo
+    - field.field.node.contenidos_programaticos.field_plan_estudios
     - field.field.node.contenidos_programaticos.field_programa
     - field.field.node.contenidos_programaticos.field_semestre
     - node.type.contenidos_programaticos
@@ -28,6 +29,7 @@ hidden:
   field_aspecto_proceso: true
   field_documento_contenido: true
   field_periodo: true
+  field_plan_estudios: true
   field_programa: true
   field_semestre: true
   langcode: true
