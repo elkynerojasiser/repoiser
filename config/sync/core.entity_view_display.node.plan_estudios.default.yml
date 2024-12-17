@@ -18,7 +18,7 @@ mode: default
 content:
   field_anexos_pe:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -35,7 +35,7 @@ content:
     region: content
   field_documento_plan_estudios:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''

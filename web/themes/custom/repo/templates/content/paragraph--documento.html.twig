@@ -1,3 +1,12 @@
-<div class="documento">
-  {{ content.field_archivo_documento }}
+<div class="card p-3 mb-3">
+  <div class="card-body">
+    <h6>Nombre del Documento:</h6>
+     <p>{{ content.field_nombre_documento }}</p>
+    <hr>
+    <h6>Descripción:</h6>
+    <p>{{ content.field_descripcion_documento }}</p>
+    <hr>
+    <h6>Archivo</h6>
+    {{ content.field_archivo_documento }}
+  </div>
 </div>

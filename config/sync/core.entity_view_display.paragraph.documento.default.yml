@@ -21,9 +21,22 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+    weight: 2
+    region: content
+  field_descripcion_documento:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nombre_documento:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  field_descripcion_documento: true
   field_metadatos: true
-  field_nombre_documento: true
