@@ -1,0 +1,11 @@
+uuid: c3f2250d-014c-42ef-8160-c7ab5ecea888
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.acreditacion
+id: node.acreditacion
+target_entity_type_id: node
+target_bundle: acreditacion
+default_langcode: site_default
+language_alterable: true

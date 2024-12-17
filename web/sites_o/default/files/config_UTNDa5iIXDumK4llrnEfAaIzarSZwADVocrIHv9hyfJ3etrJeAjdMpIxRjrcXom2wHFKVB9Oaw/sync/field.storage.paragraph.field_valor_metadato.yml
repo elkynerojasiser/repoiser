@@ -1,0 +1,21 @@
+uuid: 6473d874-d205-4a78-8b2a-e575ed85c220
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_valor_metadato
+field_name: field_valor_metadato
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

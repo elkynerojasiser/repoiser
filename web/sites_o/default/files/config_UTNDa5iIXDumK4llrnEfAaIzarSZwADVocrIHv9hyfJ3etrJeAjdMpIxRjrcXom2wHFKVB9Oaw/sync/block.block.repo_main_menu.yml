@@ -1,0 +1,27 @@
+uuid: b1f66bac-7c41-48fd-967e-abacbe49a967
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - repo
+_core:
+  default_config_hash: Vrn8CVbuNQkElxVQ1UJS57jzA7WHlZ_6EJMfWkspfr0
+id: repo_main_menu
+theme: repo
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

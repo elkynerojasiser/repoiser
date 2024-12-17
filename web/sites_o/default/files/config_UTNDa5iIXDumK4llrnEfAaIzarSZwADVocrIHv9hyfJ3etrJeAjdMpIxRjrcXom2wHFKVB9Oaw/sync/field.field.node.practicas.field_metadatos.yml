@@ -1,0 +1,31 @@
+uuid: 3f1797ce-ce41-485e-aee7-a9429f9982d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metadatos
+    - node.type.practicas
+    - paragraphs.paragraphs_type.metadato
+  module:
+    - entity_reference_revisions
+id: node.practicas.field_metadatos
+field_name: field_metadatos
+entity_type: node
+bundle: practicas
+label: Metadatos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      metadato: metadato
+    negate: 0
+    target_bundles_drag_drop:
+      metadato:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

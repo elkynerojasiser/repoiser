@@ -1,0 +1,59 @@
+uuid: 1d2c22cc-7366-4a0d-86d2-781e59150e60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.autoevaluacion.field_avances
+    - field.field.node.autoevaluacion.field_informe
+    - field.field.node.autoevaluacion.field_plan_de_mejoramiento
+    - field.field.node.autoevaluacion.field_version
+    - node.type.autoevaluacion
+  module:
+    - datetime
+    - file
+    - user
+id: node.autoevaluacion.default
+targetEntityType: node
+bundle: autoevaluacion
+mode: default
+content:
+  field_avances:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_informe:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_plan_de_mejoramiento:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_version:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

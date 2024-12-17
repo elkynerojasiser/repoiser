@@ -1,0 +1,22 @@
+uuid: 36a35013-ee5e-43db-be29-7e845c55bb1d
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - repo
+_core:
+  default_config_hash: b6CHwczHyuqKRuf-Oi4zY6q-9HCsLyWRGkk8-reVCfk
+id: repo_help
+theme: repo
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

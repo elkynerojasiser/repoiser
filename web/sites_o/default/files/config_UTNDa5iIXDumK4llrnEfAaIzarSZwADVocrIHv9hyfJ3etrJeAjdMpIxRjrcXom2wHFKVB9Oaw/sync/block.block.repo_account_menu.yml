@@ -1,0 +1,27 @@
+uuid: 54da0a5c-cd82-49bc-886c-cec32907bd45
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - repo
+_core:
+  default_config_hash: UnALXKN9BfRPollIjAI9kSu6YpvuB6zhseorFtN2xW8
+id: repo_account_menu
+theme: repo
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

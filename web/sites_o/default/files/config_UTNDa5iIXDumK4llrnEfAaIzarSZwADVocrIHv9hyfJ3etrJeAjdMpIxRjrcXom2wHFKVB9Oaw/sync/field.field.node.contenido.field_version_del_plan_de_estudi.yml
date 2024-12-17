@@ -1,0 +1,19 @@
+uuid: db935d41-5233-48da-9deb-db6a2f07730e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_version_del_plan_de_estudi
+    - node.type.contenido
+id: node.contenido.field_version_del_plan_de_estudi
+field_name: field_version_del_plan_de_estudi
+entity_type: node
+bundle: contenido
+label: 'Versión del plan de estudio'
+description: 'Este campo es para la versión del plan de estudios'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

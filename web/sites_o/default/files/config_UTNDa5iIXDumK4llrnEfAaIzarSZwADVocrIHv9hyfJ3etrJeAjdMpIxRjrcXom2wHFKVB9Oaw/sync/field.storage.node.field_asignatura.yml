@@ -1,0 +1,33 @@
+uuid: e702595f-5df6-4666-a05e-22f1df57188d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_asignatura
+field_name: field_asignatura
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: movilidad
+      label: MOVILIDAD
+    -
+      value: redes_cableadas
+      label: 'REDES CABLEADAS'
+    -
+      value: movil_ii
+      label: 'MOVIL II'
+    -
+      value: bases_de_datos
+      label: 'BASES DE DATOS'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

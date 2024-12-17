@@ -1,0 +1,22 @@
+uuid: 07c553a1-defc-47e2-9229-c449a6c2e5b9
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - repo
+_core:
+  default_config_hash: uHGQeXpjudF5HkwGniQ_zzUngqcc3iAzzE7fdjWJiyA
+id: repo_powered
+theme: repo
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 87607c8d-e370-4fa0-a27f-59dff76b2b51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuadros_maestros
+    - node.type.acreditacion
+  module:
+    - file
+id: node.acreditacion.field_cuadros_maestros
+field_name: field_cuadros_maestros
+entity_type: node
+bundle: acreditacion
+label: 'Cuadros maestros'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'acreditacion/cmaestros[date:custom:y]-[date:custom:m]'
+  file_extensions: 'xls xlsx'
+  max_filesize: ''
+  description_field: false
+field_type: file

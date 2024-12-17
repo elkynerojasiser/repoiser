@@ -9,7 +9,6 @@ dependencies:
     - field.field.paragraph.documento.field_nombre_documento
     - paragraphs.paragraphs_type.documento
   module:
-    - entity_reference_revisions
     - file
 id: paragraph.documento.default
 targetEntityType: paragraph
@@ -18,34 +17,13 @@ mode: default
 content:
   field_archivo_documento:
     type: file_default
-    label: above
+    label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_descripcion_documento:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_metadatos:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_nombre_documento:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_descripcion_documento: true
+  field_metadatos: true
+  field_nombre_documento: true

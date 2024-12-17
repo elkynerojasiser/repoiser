@@ -1,0 +1,17 @@
+uuid: edaf8bdb-ad07-40fb-bf54-6572c49c3b3d
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Acreditación
+type: acreditacion
+description: 'La acreditación de alta calidad es un proceso que las instituciones de educación superior (IES) emprenden voluntariamente para certificar ante el Estado y la sociedad su capacidad de ofrecer una educación'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

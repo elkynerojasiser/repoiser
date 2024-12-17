@@ -1,0 +1,29 @@
+uuid: 3be3d513-3416-4459-967c-0cd6deacc709
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programa_practica
+    - node.type.practicas
+    - taxonomy.vocabulary.programa
+id: node.practicas.field_programa_practica
+field_name: field_programa_practica
+entity_type: node
+bundle: practicas
+label: Programa
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      programa: programa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

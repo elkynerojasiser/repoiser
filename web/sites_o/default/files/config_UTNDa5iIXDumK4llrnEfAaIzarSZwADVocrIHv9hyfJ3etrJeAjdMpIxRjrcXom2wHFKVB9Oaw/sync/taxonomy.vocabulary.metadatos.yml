@@ -1,0 +1,9 @@
+uuid: e178c00f-800a-4f5c-b993-b5f573acd6b1
+langcode: es
+status: true
+dependencies: {  }
+name: Metadatos
+vid: metadatos
+description: null
+weight: 0
+new_revision: false

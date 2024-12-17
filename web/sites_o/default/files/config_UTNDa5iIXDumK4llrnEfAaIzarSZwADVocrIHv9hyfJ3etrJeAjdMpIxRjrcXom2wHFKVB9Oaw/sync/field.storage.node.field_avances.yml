@@ -1,0 +1,23 @@
+uuid: 9168dff9-7e7c-4e30-b6ce-3f607d872db3
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_avances
+field_name: field_avances
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

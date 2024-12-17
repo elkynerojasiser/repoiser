@@ -1,0 +1,20 @@
+uuid: 0d27d1dd-cbca-47da-810b-739e95b187a6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ano_de_creacion
+field_name: field_ano_de_creacion
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

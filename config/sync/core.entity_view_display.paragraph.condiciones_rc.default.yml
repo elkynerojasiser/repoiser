@@ -16,7 +16,7 @@ mode: default
 content:
   field_anexos_rc:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -25,7 +25,7 @@ content:
     region: content
   field_documento_condicion_rc:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -34,7 +34,7 @@ content:
     region: content
   field_nombre_condicion_rc:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

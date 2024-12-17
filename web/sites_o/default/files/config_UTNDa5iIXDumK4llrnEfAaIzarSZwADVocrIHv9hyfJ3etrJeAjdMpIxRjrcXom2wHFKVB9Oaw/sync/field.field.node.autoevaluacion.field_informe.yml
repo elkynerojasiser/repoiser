@@ -1,0 +1,27 @@
+uuid: 250c2daf-32a0-4a90-aa07-7e56ad32d6cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informe
+    - node.type.autoevaluacion
+  module:
+    - file
+id: node.autoevaluacion.field_informe
+field_name: field_informe
+entity_type: node
+bundle: autoevaluacion
+label: Informe
+description: 'Se ingresan soportes'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'autoevaluacion/informes[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx'
+  max_filesize: ''
+  description_field: false
+field_type: file

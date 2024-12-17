@@ -1,0 +1,21 @@
+uuid: ede3cf15-6695-4bca-8be8-89f326d9a931
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_contenido_articulo
+    - node.type.article
+  module:
+    - options
+id: node.article.field_tipo_de_contenido_articulo
+field_name: field_tipo_de_contenido_articulo
+entity_type: node
+bundle: article
+label: 'Tipo de contenido'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

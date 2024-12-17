@@ -1,0 +1,30 @@
+{# Archivo: themes/custom/tu-tema/templates/views-view--registro_calificado--page-1.html.twig #}
+
+{#<div class="view-right-column">
+    <div class="contenedor">
+        <div class="trabajo">
+            <div class="detalles">
+              <div class="img-acreditacion">
+                <img src="/themes/custom/repo/assets/icons/calificado.png" alt="Documentos Institucionales">
+              </div>
+              <h1>{{ fields.title.content }}</h1>
+              <div class="condiciones-container">
+                <span class="condiciones">{{ fields.field_condiciones.content }}</span>
+              </div>
+              <div class="operaciones-container">
+                <span class="operations">{{ fields.operations.content }}</span>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>#}
+
+<div class="container">
+  <a href="{{ fields.title.url }}" class="card-link">
+    <div class="card">
+      <div class="card-title">
+        <h3>{{ fields.title.content }}</h3>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,22 @@
+uuid: 85983858-209d-41c0-8d06-b084c1cbfde2
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - repo
+_core:
+  default_config_hash: VZDxR0xdW-n-VWQRlRQjsiN-dgDS3-1Es-s1vXLfgsI
+id: repo_messages
+theme: repo
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }
