@@ -19,7 +19,7 @@ mode: default
 content:
   field_anexos_pap:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -28,9 +28,9 @@ content:
     region: content
   field_ano:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 102
     region: content
@@ -44,7 +44,7 @@ content:
     region: content
   field_documento_plan_anual:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''

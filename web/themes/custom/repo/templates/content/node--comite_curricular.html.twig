@@ -1,0 +1,49 @@
+{# node--practicas.html.twig #}
+
+<div class="container custom-formacion">
+	<article {{attributes.addClass('node','node--type-practicas','clearfix')}}>
+		<div class="row d-flex justify-content-center">
+			<div class="col d-flex justify-content-center">
+				<h3 class="text-center">{{ label }}</h3>
+			</div>
+		</div>
+		<div class="card p-3 mb-3">
+			<div class="card-body">
+        <h5>Periodo Académico: {{ content.field_periodo }}</h5>
+        <h5>Fecha - Hora : {{ content.field_fecha }}</h5>
+      </div>
+		</div>
+    <div class="card p-3 mb-3">
+			<div class="row">
+				<div class="col">
+					<h3>Convocatoria</h3>
+				</div>
+			</div>
+			{{ content.field_convocatoria_cr }}
+		</div>
+    <div class="card p-3 mb-3">
+			<div class="row">
+				<div class="col">
+					<h3>Asistencia</h3>
+				</div>
+			</div>
+			{{ content.field_lista_asistencia_cr }}
+		</div>
+    <div class="card p-3 mb-3">
+			<div class="row">
+				<div class="col">
+					<h3>Acta de Comité Curricular</h3>
+				</div>
+			</div>
+			{{ content.field_acta_cr }}
+		</div>
+    <div class="card p-3 mb-3">
+			<div class="row">
+				<div class="col">
+					<h3>Anexos</h3>
+				</div>
+			</div>
+			{{ content.field_anexos_cr }}
+		</div>
+	</article>
+</div>

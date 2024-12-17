@@ -23,7 +23,7 @@ mode: default
 content:
   field_acta_cr:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -32,7 +32,7 @@ content:
     region: content
   field_anexos_cr:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -49,7 +49,7 @@ content:
     region: content
   field_convocatoria_cr:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -58,7 +58,7 @@ content:
     region: content
   field_fecha:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
       format_type: medium
@@ -67,7 +67,7 @@ content:
     region: content
   field_lista_asistencia_cr:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -76,9 +76,9 @@ content:
     region: content
   field_periodo:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 106
     region: content
