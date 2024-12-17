@@ -1,0 +1,14 @@
+uuid: 501c1245-545a-43fe-a009-09b84af0a3af
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.invitado
+  module:
+    - user
+id: user_remove_role_action.invitado
+label: 'Elimina el rol Invitado al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: invitado

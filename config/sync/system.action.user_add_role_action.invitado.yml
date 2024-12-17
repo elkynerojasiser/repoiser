@@ -1,0 +1,14 @@
+uuid: fffd28ba-0854-425f-aeeb-c2acd1189698
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.invitado
+  module:
+    - user
+id: user_add_role_action.invitado
+label: 'Añade el rol Invitado al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: invitado

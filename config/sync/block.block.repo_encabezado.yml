@@ -1,7 +1,11 @@
-uuid: 84a8b2fa-7a5a-4ada-967d-6c5058c66fb4
+uuid: f51f35aa-fa9b-4179-9325-3f30cf5fc107
 langcode: es
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:a1f874fb-7318-4931-964a-ce80223e3ddd'
+  module:
+    - block_content
   theme:
     - repo
 id: repo_encabezado
@@ -9,9 +13,9 @@ theme: repo
 region: header
 weight: 0
 provider: null
-plugin: 'block_content:27137fe4-a642-4540-88ab-6b8e1bc9acbb'
+plugin: 'block_content:a1f874fb-7318-4931-964a-ce80223e3ddd'
 settings:
-  id: 'block_content:27137fe4-a642-4540-88ab-6b8e1bc9acbb'
+  id: 'block_content:a1f874fb-7318-4931-964a-ce80223e3ddd'
   label: Encabezado
   label_display: '0'
   provider: block_content
