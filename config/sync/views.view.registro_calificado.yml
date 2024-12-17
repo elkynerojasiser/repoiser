@@ -224,7 +224,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: text
-          empty: false
+          empty: true
           content:
             value: '<h3>Registro Calificado</h3>'
             format: full_html

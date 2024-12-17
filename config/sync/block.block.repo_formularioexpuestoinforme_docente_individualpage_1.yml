@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /informe-docente-individual
+    pages: /gestion-academica/informe-docente/informe-docente-individual

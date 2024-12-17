@@ -1,22 +1,22 @@
-uuid: 3a4752d7-288e-41bb-ad2e-b921156094b1
+uuid: a80afb0a-1e83-453a-82fd-8f9477b17029
 langcode: es
 status: true
 dependencies:
   config:
-    - views.view.comite_curricular
+    - views.view.practicas_profesionales
   module:
     - system
     - views
   theme:
     - repo
-id: repo_formularioexpuestocomite_curricularpage_1
+id: repo_formularioexpuestopracticas_profesionalespage_1
 theme: repo
 region: sidebar_first
 weight: 0
 provider: null
-plugin: 'views_exposed_filter_block:comite_curricular-page_1'
+plugin: 'views_exposed_filter_block:practicas_profesionales-page_1'
 settings:
-  id: 'views_exposed_filter_block:comite_curricular-page_1'
+  id: 'views_exposed_filter_block:practicas_profesionales-page_1'
   label: ''
   label_display: visible
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /gestion-academica/comite-curricular
+    pages: /practicas-profesionales
