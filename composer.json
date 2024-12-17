@@ -23,9 +23,11 @@
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/devel": "^5.0",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/layout_builder_blocks": "^1.1",
         "drupal/menu_block": "^1.13",
         "drupal/paragraphs": "^1.18",
+        "drupal/pathauto": "^1.13",
         "drupal/structure_sync": "^2.0",
         "drupal/superfish": "^1.8",
         "drush/drush": "^13.3"

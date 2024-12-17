@@ -161,6 +161,7 @@ display:
       relationships: {  }
       header: {  }
       footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -177,7 +178,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: acreditacion
+      path: aseguramiento-de-la-calidad/acreditacion
     cache_metadata:
       max-age: -1
       contexts:

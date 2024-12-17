@@ -1,0 +1,22 @@
+uuid: 05afce81-05a5-4753-9a1a-f071edb4d2a6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: plan_anual_del_programa
+label: 'Plan anual del programa'
+type: 'canonical_entities:node'
+pattern: '/gestion-academica/plan-anual-del-programa/[node:title]'
+selection_criteria:
+  be7c6c1b-a51b-424b-8c6e-067f383a72ee:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: be7c6c1b-a51b-424b-8c6e-067f383a72ee
+    context_mapping:
+      node: node
+    bundles:
+      plan_anual_programa: plan_anual_programa
+selection_logic: and
+weight: -5
+relationships: {  }

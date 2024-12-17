@@ -1,0 +1,22 @@
+uuid: cdd8cb89-a6cf-4522-a892-d3316d10778a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: registro_calificado
+label: 'Registro Calificado'
+type: 'canonical_entities:node'
+pattern: '/registro-calificado/[node:title]'
+selection_criteria:
+  cab23a3c-0d94-4c97-84b1-c4a5fbea4252:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: cab23a3c-0d94-4c97-84b1-c4a5fbea4252
+    context_mapping:
+      node: node
+    bundles:
+      registro_calificado: registro_calificado
+selection_logic: and
+weight: -5
+relationships: {  }

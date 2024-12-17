@@ -258,7 +258,7 @@ display:
     display_options:
       exposed_block: true
       display_extenders: {  }
-      path: plan-anual-del-programa
+      path: gestion-academica/plan-anual-del-programa
     cache_metadata:
       max-age: -1
       contexts:

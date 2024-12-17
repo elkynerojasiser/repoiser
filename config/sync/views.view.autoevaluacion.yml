@@ -178,7 +178,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: autoevaluacion
+      path: aseguramiento-de-la-calidad/autoevaluacion
     cache_metadata:
       max-age: -1
       contexts:

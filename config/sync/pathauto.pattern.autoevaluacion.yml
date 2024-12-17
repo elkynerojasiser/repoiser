@@ -1,0 +1,22 @@
+uuid: 640fb152-b268-448d-95c0-4f16f4486b6b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: autoevaluacion
+label: Autoevaluación
+type: 'canonical_entities:node'
+pattern: '/aseguramiento-de-la-calidad/autoevaluacion/[node:title]'
+selection_criteria:
+  7bc98a17-bc6d-4699-96a6-073c36e95be5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7bc98a17-bc6d-4699-96a6-073c36e95be5
+    context_mapping:
+      node: node
+    bundles:
+      autoevaluacion: autoevaluacion
+selection_logic: and
+weight: -5
+relationships: {  }

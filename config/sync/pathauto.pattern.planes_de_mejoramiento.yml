@@ -1,0 +1,22 @@
+uuid: 924eb34e-c6d6-4d35-903d-53df2b59e2a2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: planes_de_mejoramiento
+label: 'Planes de mejoramiento'
+type: 'canonical_entities:node'
+pattern: '/aseguramiento-de-la-calidad/planes-de-mejoramiento/[node:title]'
+selection_criteria:
+  c1614202-47c6-4e72-b357-28d3ec146c35:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c1614202-47c6-4e72-b357-28d3ec146c35
+    context_mapping:
+      node: node
+    bundles:
+      planes_mejoramiento: planes_mejoramiento
+selection_logic: and
+weight: -5
+relationships: {  }
