@@ -21,9 +21,9 @@ mode: default
 content:
   field_asignatura:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 104
     region: content
@@ -31,13 +31,13 @@ content:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 105
     region: content
   field_documento_contenido:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -46,9 +46,9 @@ content:
     region: content
   field_periodo:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 106
     region: content
@@ -70,9 +70,9 @@ content:
     region: content
   field_semestre:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 103
     region: content

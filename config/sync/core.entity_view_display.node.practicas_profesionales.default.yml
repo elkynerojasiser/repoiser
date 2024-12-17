@@ -21,7 +21,7 @@ mode: default
 content:
   field_anexos_practica:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -38,7 +38,7 @@ content:
     region: content
   field_empresa_entidad:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -46,7 +46,7 @@ content:
     region: content
   field_estudiante:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -54,7 +54,7 @@ content:
     region: content
   field_informe_final_practica:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -63,9 +63,9 @@ content:
     region: content
   field_periodo:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 106
     region: content

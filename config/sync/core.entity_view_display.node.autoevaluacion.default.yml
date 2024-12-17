@@ -18,7 +18,7 @@ mode: default
 content:
   field_anexos:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -27,7 +27,7 @@ content:
     region: content
   field_aspecto_proceso:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -35,7 +35,7 @@ content:
     region: content
   field_documento_autoevaluacion:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -44,7 +44,7 @@ content:
     region: content
   field_programa:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
